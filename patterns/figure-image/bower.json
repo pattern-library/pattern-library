@@ -1,0 +1,23 @@
+{
+  "name": "html-patterns-test",
+  "version": "0.0.1",
+  "homepage": "https://github.com/scottnath/html-patterns-test",
+  "authors": [
+    "Scott Nath <github@scottnath.com>"
+  ],
+  "main": "./figure-image.html",
+  "pattern": {
+    "pattern": "./figure-image.html",
+    "data": "./figure-image.yml",
+    "styles": "./figure-image.scss",
+    "script": "./figure-image.js"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
