@@ -9,23 +9,22 @@ options:
 	version: info
 data:
 	class: message
-  message:
-    content:
-      class: message--CONTENT
-      content: Aenean commodo ligula eget dolor. Aenean massa.
-    versions:
+	content:
+		class: message--CONTENT
+		message: Aenean commodo ligula eget dolor. Aenean massa.
+		versions:
 	    alert:
 	    	class: message--ALERT
-	    	content: Alert message lorem ipsum
-	    error:
-	    	class: message--ERROR
-	    	content: Error message lorem ipsum
-	    info:
-	    	class: message--INFO
-	    	content: Info message lorem ipsum
-	    success:
-	    	class: message--SUCCESS
-	    	content: Success message lorem ipsum
-	    warning:
-	    	class: message--WARNING
-	    	content: Alert message lorem ipsum
+	    	message: Alert message lorem ipsum
+		  error:
+		  	class: message--ERROR
+		  	message: Error message lorem ipsum
+		  info:
+		  	class: message--INFO
+		  	message: Info message lorem ipsum
+		  success:
+		  	class: message--SUCCESS
+		  	message: Success message lorem ipsum
+		  warning:
+		  	class: message--WARNING
+		  	message: Alert message lorem ipsum
