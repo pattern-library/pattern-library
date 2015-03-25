@@ -1,0 +1,17 @@
+{
+  "name": "pattern-library-message",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pattern-library/message",
+  "authors": [
+    "Scott Nath <github@scottnath.com>"
+  ],
+  "main": "./message.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,31 @@
+name: Message
+description: A message component with a content area
+html: ./message.html
+css: ./message.css
+sass: ./sass/_message.scss
+script: ./message.js
+category: components
+options:
+	version: info
+data:
+	class: message
+  message:
+    content:
+      class: message--CONTENT
+      content: Aenean commodo ligula eget dolor. Aenean massa.
+    versions:
+	    alert:
+	    	class: message--ALERT
+	    	content: Alert message lorem ipsum
+	    error:
+	    	class: message--ERROR
+	    	content: Error message lorem ipsum
+	    info:
+	    	class: message--INFO
+	    	content: Info message lorem ipsum
+	    success:
+	    	class: message--SUCCESS
+	    	content: Success message lorem ipsum
+	    warning:
+	    	class: message--WARNING
+	    	content: Alert message lorem ipsum

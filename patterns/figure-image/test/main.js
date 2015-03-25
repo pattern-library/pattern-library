@@ -19,9 +19,15 @@ describe('pattern-figure-image', function() {
   describe('files-exist', function() {
 		var meta = yaml.safeLoad(fs.readFileSync(patternYml, 'utf8'));
 
-	    if (meta.styles) {
-				it('should contain style sheets', function() {
-			    should.exist(meta.styles);
+	    if (meta.css) {
+				it('should contain css file', function() {
+			    should.exist(meta.css);
+				});
+			}
+
+	    if (meta.sass) {
+				it('should contain a sass file', function() {
+			    should.exist(meta.sass);
 				});
 			}
 
