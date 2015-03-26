@@ -1,7 +1,6 @@
 name: Message
 description: A message component with a content area
 html: ./message.html
-css: ./message.css
 sass: ./sass/_message.scss
 script: ./message.js
 category: components

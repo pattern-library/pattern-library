@@ -1,7 +1,6 @@
 name: Figure Image
 description: A `figure` element with `figcaption` and an included `img` element from /base/img/img.html.
 html: ./figure-image.html
-css: ./figure-image.css
 sass: ./sass/_figure-image.scss
 script: ./figure-image.js
 category: components

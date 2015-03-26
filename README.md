@@ -10,7 +10,6 @@ These are the files which may be in a single HTML pattern's directory. This imag
 
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) pattern.yml
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.html
-	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.css
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.js
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) bower.json
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) README.md
@@ -68,10 +67,6 @@ Should include usage examples
 ### PATTERN.html
 
 A twig/swig-style template containing html, data-placeholders with curly braces, import-code for other patterns
-
-### PATTERN.css
-
-A pattern's css file. Should be compiled from any SASS/LESS connected to the pattern.
 
 ### PATTERN.js
 
