@@ -83,3 +83,7 @@ A SASS file. Includes imports for SASS partials:
 ### ./test/main.js
 
 A unit-test file for the pattern.
+
+## Contributing
+
+Submit a pull request to this repo. Do not submit pull requests to the subtree, read-only versions of these patterns.
