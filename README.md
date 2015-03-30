@@ -14,7 +14,7 @@ These are the files which may be in a single HTML pattern's directory. This imag
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) bower.json
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) README.md
 	* ![folder](http://scottnath.github.io/atlas/images/doctree-icons/folder-open.gif) sass/
-		* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) _example-pattern.scss
+		* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.scss
 		* ![folder](http://scottnath.github.io/atlas/images/doctree-icons/folder-open.gif) partials/
 			* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) _extends.scss
 			* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) _mixins.scss
@@ -33,7 +33,6 @@ This file contains paths to find supporting files, meta data, and dummy data to 
 name: Figure Image
 description: A `figure` element with `figcaption` and an included `img` element from /base/img/img.html.
 html: ./figure-image.html
-css: ./figure-image.css
 sass: ./sass/_figure-image.scss
 script: ./figure-image.js
 category: components
@@ -72,9 +71,11 @@ A twig/swig-style template containing html, data-placeholders with curly braces,
 
 A pattern's js file. 
 
-### ./sass/_PATTERN.scss
+### ./sass/PATTERN.scss
 
-A SASS file. Includes imports for SASS partials:
+A SASS file. **NOTE:** do not prefix this file with an underscore or it will be ignored when import-conversion happens.
+
+Following the [North Standards](https://github.com/north/north#css-naming-conventions), this file includes imported files for SASS partials:
 
 * ./sass/partials/_extends.scss
 * ./sass/partials/_mixins.scss
