@@ -3,7 +3,7 @@ description: A basic img html pattern
 html: ./img.html
 css: ./img.css
 category: base
-variables:
+data:
   img:
     src: http://placehold.it/350x150&text=base--img
     alt: Aenean commodo ligula eget dolor. Aenean massa.
