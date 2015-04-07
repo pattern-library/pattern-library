@@ -5,7 +5,7 @@ sass: ./sass/figure-image.scss
 script: ./figure-image.js
 category: components
 includes:
-  - ../base/img
+  - ../../base/img
 options:
 	foo: bar
 data:
