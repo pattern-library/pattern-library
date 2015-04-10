@@ -1,0 +1,7 @@
+name: Code
+description: Computer code in text
+twig: ./code.twig
+sass: ./code.scss
+category: base
+data:
+  snippet: '<link rel="stylesheet" href="#" />'
