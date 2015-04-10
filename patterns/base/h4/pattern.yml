@@ -1,0 +1,9 @@
+name: Heading Level 4
+description: Fourth level heading within an associated section
+twig: ./h4.twig
+sass: ./h4.scss
+category: base
+variables:
+  header:
+    text: Header 4
+    class: base--h4

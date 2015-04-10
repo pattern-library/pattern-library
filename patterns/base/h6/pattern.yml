@@ -1,0 +1,9 @@
+name: Heading Level 6
+description: Sixth level heading within an associated section
+twig: ./h6.twig
+sass: ./h6.scss
+category: base
+variables:
+  header:
+    text: Header 6
+    class: base--h6

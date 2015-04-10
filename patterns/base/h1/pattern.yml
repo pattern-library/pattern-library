@@ -1,0 +1,9 @@
+name: Heading Level 1
+description: First level heading for associated section
+twig: ./h1.twig
+sass: ./h1.scss
+category: base
+variables:
+  header:
+    text: Header 1
+    class: base--h1

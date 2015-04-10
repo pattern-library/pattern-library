@@ -1,6 +1,6 @@
 name: Message
 description: A message component with a content area
-html: ./message.html
+twig: ./message.twig
 sass: ./sass/message.scss
 script: ./message.js
 category: components

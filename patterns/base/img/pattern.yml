@@ -1,6 +1,6 @@
 name: Base Image
 description: A basic img html pattern
-html: ./img.html
+twig: ./img.twig
 css: ./img.css
 category: base
 data:

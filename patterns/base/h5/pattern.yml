@@ -1,0 +1,9 @@
+name: Heading Level 5
+description: Fifth level heading within an associated section
+twig: ./h5.twig
+sass: ./h5.scss
+category: base
+variables:
+  header:
+    text: Header 5
+    class: base--h5
