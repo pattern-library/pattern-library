@@ -3,7 +3,7 @@ description: Third level heading within an associated section
 twig: ./h3.twig
 sass: ./h3.scss
 category: base
-variables:
+data:
   header:
     text: Header 3
     class: base--h3

@@ -3,7 +3,7 @@ description: Fifth level heading within an associated section
 twig: ./h5.twig
 sass: ./h5.scss
 category: base
-variables:
+data:
   header:
     text: Header 5
     class: base--h5

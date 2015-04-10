@@ -3,7 +3,7 @@ description: Second level heading within an associated section
 twig: ./h2.twig
 sass: ./h2.scss
 category: base
-variables:
+data:
   header:
     text: Header 2
     class: base--h2
