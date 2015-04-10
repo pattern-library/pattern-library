@@ -1,0 +1,9 @@
+name: Em
+description: Emphasized text
+twig: ./em.twig
+sass: ./em.scss
+category: base
+variables:
+  em: 
+    text: Emphasized text
+    class: base--em
