@@ -3,7 +3,7 @@ description: Anchor Link
 twig: ./a.twig
 sass: ./a.scss
 category: base
-variables:
+data:
   a:
     text: Anchor Link
     class: base--a
