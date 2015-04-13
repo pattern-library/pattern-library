@@ -5,6 +5,6 @@ sass: ./label.scss
 category: base
 data:
   label:
-    inputid: firstname
+    inputid:
     text: Label
     class: base--label
