@@ -1,0 +1,9 @@
+name: Label
+description: The label element represents a caption in a user interface.
+twig: ./label.twig
+sass: ./label.scss
+category: base
+data:
+  label:
+    text: Label
+    class: base--label
