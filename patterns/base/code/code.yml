@@ -4,4 +4,6 @@ twig: ./code.twig
 sass: ./code.scss
 category: base
 data:
-  snippet: '<link rel="stylesheet" href="#" />'
+  code:
+    snippet: '<link rel="stylesheet" href="#" />'
+    class: base--code
