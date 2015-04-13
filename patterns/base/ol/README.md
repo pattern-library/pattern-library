@@ -1,6 +1,6 @@
 # Ordered List
 
-Ordered List, `<ul>`, is the base styling for a listing of items whose order is relevant to their display
+Ordered List, `<ol>`, is the base styling for a listing of items whose order is relevant to their display
 
 ## Available Classes
 
