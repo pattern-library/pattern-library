@@ -4,5 +4,4 @@ twig: ./body.twig
 sass: ./body.scss
 category: base
 data:
-  body:
-    content: content
+  content: content
