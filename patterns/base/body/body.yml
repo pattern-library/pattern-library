@@ -1,0 +1,7 @@
+name: Body
+description: The document's body which contains all of its content
+twig: ./body.twig
+sass: ./body.scss
+category: base
+data:
+  content: content
