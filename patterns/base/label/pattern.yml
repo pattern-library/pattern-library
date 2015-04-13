@@ -5,6 +5,6 @@ sass: ./label.scss
 category: base
 data:
   label:
-    id:
+    for:
     text: Label
     class: base--label
