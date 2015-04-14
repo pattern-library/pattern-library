@@ -1,0 +1,8 @@
+name: Pre
+description: Pre formatted text
+twig: ./pre.twig
+sass: ./pre.scss
+category: base
+data:
+  pre:
+    class: base--pre
