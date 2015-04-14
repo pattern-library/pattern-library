@@ -1,0 +1,9 @@
+name: Strong
+description: Important (strong) text
+twig: ./strong.twig
+sass: ./strong.scss
+category: base
+data:
+  strong:
+    text: Important text
+    class: base--strong
