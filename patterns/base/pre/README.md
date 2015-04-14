@@ -7,4 +7,4 @@ Pre formatted text, `<pre>`, is an example of text that whose whitespace is pres
 Styling can be applied in the following ways:
 
 * `.base--pre` - class
-* `.base--STYLED pre` - `<label>` tag inside a class of `.base--STYLED`
+* `.base--STYLED pre` - `<pre>` tag inside a class of `.base--STYLED`
