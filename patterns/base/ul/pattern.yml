@@ -10,6 +10,6 @@ data:
       - [base--li, List item 1]
       - [base--li, List item 2]
       - [base--li, Really super duper long list item so we can see how lists look like when they wrap]
-      - List item 3
-      - List item 4
-      - List item 5
+      - [base--li, List item 3]
+      - [base--li, List item 4]
+      - [base--li, List item 5]
