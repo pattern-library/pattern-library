@@ -1,0 +1,14 @@
+name: Select 
+description: Select represents a control that presents a menu of options. 
+twig: ./select.twig
+sass: ./select.scss
+category: base
+data:
+  select:
+    class: base--select
+    id: select1
+    name: select1
+  option:
+    class: base--option
+    value: value1
+    text: Value 1
