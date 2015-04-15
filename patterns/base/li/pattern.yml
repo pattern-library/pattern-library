@@ -6,4 +6,4 @@ category: base
 data:
   li:
     class: base--li
-    text: - List item 1
+    text: List item 1
