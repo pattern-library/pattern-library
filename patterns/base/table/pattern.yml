@@ -1,0 +1,19 @@
+name: Table
+description: 
+twig: ./table.twig
+sass: ./table.scss
+category: base
+data:
+  table:
+    class: base--table
+    head:
+      class: base--thead
+      content:
+        - First Name
+        - Last Name
+        - Job
+    body:
+      class: base--tbody
+      content:
+        - [John, Doe, Developer]
+        - [Jane, Doe, Writer]
