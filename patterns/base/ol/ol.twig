@@ -1,6 +1,6 @@
 <ol class="{{ol.class}}">
-  {% for item in listitems %}
-  <li class="{{li.class}}">{{ item }}</li>
+  {% for i in range(1, 3) %}
+    {% include '../li/li.twig' %}
   {% endfor %}
 </ol>
 
