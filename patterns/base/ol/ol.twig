@@ -1,5 +1,5 @@
-<ol class="{{ol.class}}">
-  {% for items in ol.listitems %}
-      <li class="{{li.class}}">{{ items }}</li>
+<ol class="{{ol.class}}"> 
+  {% for item in ol.listitems %}
+    <li class="{{item[0]}}">{{ item[1] }}</li>
   {% endfor %}
 </ol>
