@@ -1,13 +1,9 @@
-name: Select 
-description: Select represents a control that presents a menu of options. 
-twig: ./select.twig
-sass: ./select.scss
+name: Option 
+description: This element is used to create a control representing an item within a <select> an <optgroup> or a <datalist> HTML5 element. 
+twig: ./option.twig
+sass: ./option.scss
 category: base
 data:
-  select:
-    class: base--select
-    id: select1
-    name: select1
   option:
     class: base--option
     value: value1
