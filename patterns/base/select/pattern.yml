@@ -8,3 +8,7 @@ data:
     class: base--select
     id: select1
     name: select1
+    option:
+      value: value1
+      text: Value 1
+
