@@ -4,7 +4,7 @@ twig: ./ul.twig
 sass: ./ul.scss
 category: base
 data:
-  ol:
+  ul:
     class: base--ul
   li:
     class: base--li
