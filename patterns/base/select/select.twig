@@ -1,6 +1,6 @@
 <select name="{{select.name}}" id="{{select.id}}" class="{{select.class}}">
-  {% for i in range(1, 3) %}
-    {% include '../option/option.twig' %}
+  {% for option in options %}
+    <option class="{{option.class}}" value="{{option.value}}">{{ option.text}}</option>
   {% endfor %}
 </select>
 
