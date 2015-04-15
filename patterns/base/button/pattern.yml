@@ -4,14 +4,20 @@ twig: ./button.twig
 sass: ./button.scss
 category: base
 data:
-  buttons:
+  button: 
     class: base--button
+    label: Click Me
+    type: button
+  versions:
     basic:
+      class: base--button
       label: Click Me
       type: button
     submit:
+      class: base--button
       label: Submit
       type: submit
     reset:
+      class: base--button
       label: Reset
       type: reset
