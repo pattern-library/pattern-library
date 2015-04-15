@@ -5,7 +5,7 @@ sass: ./button.scss
 category: base
 data:
   class: base--button
-  buttons:
+  versions:
     basic:
       label: Click Me
       type: button
