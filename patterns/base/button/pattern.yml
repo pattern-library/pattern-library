@@ -4,8 +4,8 @@ twig: ./button.twig
 sass: ./button.scss
 category: base
 data:
+  class: base--button
   buttons:
-    class: base--button
     basic:
       label: Click Me
       type: button
