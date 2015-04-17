@@ -1,6 +1,4 @@
 {% set li = ul.li %}
 <ul class="{{ul.class}}"> 
-  {% for item in ul.listitems %}
-    {% include '../li/li.twig' with li %}
-  {% endfor %}
+  {% include '../li/li.twig' with li %}
 </ul>

@@ -7,7 +7,8 @@ data:
   ul:
     class: base--ul
     li:
-      class: base--li
-      text: List item
-    listitems:
-      [li, li, li, li, li]
+      - {class: base--li, text: List item 1}
+      - {class: base--li, text: List item 2}
+      - {class: base--li, text: List item 3}
+      - {class: base--li, text: Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec sagittis congue consequat. Quisque vel iaculis eros. Quisque varius mi ac erat dapibus id pulvinar mauris lacinia.}
+      - {class: base--li, text: List item 5}

@@ -1,2 +1,4 @@
-<li class="{{li.class}}">{{ li.text }}</li>
+{% for item in li %}
+  <li class="{{li[loop.index0].class}}">{{ li[loop.index0].text }}</li>
+{% endfor %}
 
