@@ -6,10 +6,8 @@ category: base
 data:
   ul:
     class: base--ul
+    li:
+      class: base--li
+      text: List item
     listitems:
-      - {class: base--li, text: List item 1}
-      - {class: base--li, text: List item 2}
-      - {class: base--li, text: Really super duper long list item so we can see how lists look like when they wrap}
-      - {class: base--li, text: List item 3}
-      - {class: base--li, text: List item 4}
-      - {class: base--li, text: List item 5}
+      [li, li, li, li, li]
