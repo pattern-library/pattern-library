@@ -1,1 +1,3 @@
-<option class="{{option.class}}" value="{{option.value}}">{{ option.text}}</option>
+{% for item in option %}
+  <option class="{{option[loop.index0].class}}" value="{{option[loop.index0].value}}">{{ option[loop.index0].text}}</option>
+{% endfor %}

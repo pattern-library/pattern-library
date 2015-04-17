@@ -8,10 +8,7 @@ data:
     class: base--select
     id: select1
     name: select1
-  options:
-    - {class: base--option, value: value1, text: Value 1}
-    - {class: base--option, value: value2, text: Value 2}
-    - {class: base--option, value: value3, text: Value 3}
-    - {class: base--option, value: value4, text: Value 4}
-    - {class: base--option, value: value5, text: Value 5}
-
+    option:
+      - {class: base--option, value: value1, text: Value 1}
+      - {class: base--option, value: value2, text: Value 2}
+      - {class: base--option, value: value3, text: Value 3}

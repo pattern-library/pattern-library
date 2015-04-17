@@ -5,6 +5,4 @@ sass: ./option.scss
 category: base
 data:
   option:
-    class: base--option
-    value: value1
-    text: Value 1
+    - {class: base--option, value: value1, text: Value 1}

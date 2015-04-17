@@ -1,6 +1,5 @@
+{% set option = select.option %}
 <select name="{{select.name}}" id="{{select.id}}" class="{{select.class}}">
-  {% for option in options %}
-    <option class="{{option.class}}" value="{{option.value}}">{{ option.text}}</option>
-  {% endfor %}
+  {% include '../option/option.twig' with option %}
 </select>
 
