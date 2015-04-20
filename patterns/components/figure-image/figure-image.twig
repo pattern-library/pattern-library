@@ -1,0 +1,7 @@
+<!-- PATTERN START - /pattern-library/patterns/components/figure-image -->
+{% set img = figure.img %}
+<figure class="{{figure.class}}">
+  {% include '../../base/img/img.twig' with img %}
+  <figcaption>{{figure.caption.text}}</figcaption>
+</figure>
+<!-- PATTERN END - /pattern-library/patterns/components/figure-image -->
