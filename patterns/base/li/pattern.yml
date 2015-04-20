@@ -4,5 +4,6 @@ twig: ./li.twig
 sass: ./li.scss
 category: base
 data:
+  i: 0
   li:
     - {class: base--li, text: List item 1}
