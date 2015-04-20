@@ -1,0 +1,8 @@
+{% set option = select.option %}
+<select name="{{select.name}}" id="{{select.id}}" class="{{select.class}}">
+  {% for item in option %}
+    {% set i = loop.index0 %}
+    {% include '../option/option.twig' with {option, i} %}
+  {% endfor %}
+</select>
+
