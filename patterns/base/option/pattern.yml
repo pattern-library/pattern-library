@@ -4,5 +4,6 @@ twig: ./option.twig
 sass: ./option.scss
 category: base
 data:
+  i: 0
   option:
     - {class: base--option, value: value1, text: Value 1}
