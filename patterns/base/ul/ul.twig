@@ -1,0 +1,7 @@
+{% set li = ul.li %}
+<ul class="{{ul.class}}"> 
+  {% for item in li %}
+    {% set i = loop.index0 %}
+    {% include '../li/li.twig' with {li, i} %}
+  {% endfor %}
+</ul>
