@@ -1,0 +1,19 @@
+{% if content is empty %}
+  {% if head is not null %}
+    {% set content = tr.th.content %}
+  {% else %}
+    {% set content = tr.td.content %}
+  {% endif %}
+{% endif %}
+
+<tr class="{{tr.class}}">
+  {% for item in content %}
+    {% set i = loop.index0 %}
+    {% if content[i].class == 'base--th' %}
+      {% include '../th/th.twig' %}
+    {% else %}
+      {% include '../td/td.twig' %}
+    {% endif %}  
+
+  {% endfor %}
+</tr>
