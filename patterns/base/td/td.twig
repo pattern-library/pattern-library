@@ -1,0 +1,4 @@
+{% if content is empty %}
+  {% set content = td.content %}
+{% endif %}
+<td class="{{content[i].class}}">{{ content[i].text}}</td>

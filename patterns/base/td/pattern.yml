@@ -1,0 +1,10 @@
+name: Table cell
+description: Defines a cell inside a table that contains data. 
+twig: ./td.twig
+sass: ./td.scss
+category: base
+data:
+  i: 0
+  td:
+    content:
+      - {class: base--td, text: Table cell data}
