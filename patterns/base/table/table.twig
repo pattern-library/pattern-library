@@ -1,18 +1,11 @@
+{% set head = table.head %}
+{% set body = table.body %}
+
 <table class="{{table.class}}">
-  <thead class="{{table.head.class}}">
-    <tr class="base--tr">
-      {% for header in table.head.content %}
-        <td class="base--td">{{ header }}</td>
-      {% endfor %}
-    </tr>
-  </thead>
-  <tbody class="{{table.body.class}}">
-    {% for body in table.body.content %}
-    <tr class="base--tr">
-      {% for item in body %}
-        <td class="base--td">{{ item }}</td>
-      {% endfor %}
-    </tr>
-    {% endfor %}
-  </tbody>
+  {% if head is not null %}
+    {% include '../thead/thead.twig' %}
+  {% endif %} 
+  {% if body is not null %}
+    {% include '../tbody/tbody.twig' %}
+  {% endif %}
 </table>

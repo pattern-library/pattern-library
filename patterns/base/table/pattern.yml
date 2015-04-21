@@ -8,12 +8,19 @@ data:
     class: base--table
     head:
       class: base--thead
-      content:
-        - First Name
-        - Last Name
-        - Job
+      tr: 
+        class: base--tr
+      th:
+        content:
+          - {class: base--th, text: table header data}
+          - {class: base--th, text: table header data 2}
+          - {class: base--th, text: table header data 3}
     body:
       class: base--tbody
-      content:
-        - [John, Doe, Developer]
-        - [Jane, Doe, Writer]
+      tr: 
+        class: base--tr
+      td:
+        content:
+          - {class: base--td, text: table data 1}
+          - {class: base--td, text: table data 2}
+          - {class: base--td, text: table data 3}
