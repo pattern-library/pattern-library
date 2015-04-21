@@ -1,0 +1,4 @@
+{% if content is empty %}
+  {% set content = th.content %}
+{% endif %}
+<th class="{{content[i].class}}">{{ content[i].text}}</th>
