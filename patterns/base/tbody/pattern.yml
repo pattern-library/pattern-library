@@ -1,0 +1,15 @@
+name: Table body element
+description: Defines one or more rows and cells that make up a table
+twig: ./tbody.twig
+sass: ./tbody.scss
+category: base
+data:
+  body:
+    class: base--tbody
+    tr: 
+      class: base--tr
+    td:
+      content:
+        - {class: base--td, text: table data 1}
+        - {class: base--td, text: table data 2}
+        - {class: base--td, text: table data 3}

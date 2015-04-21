@@ -1,0 +1,12 @@
+{% set tr = body.tr %}
+{% if content is empty %}
+  {% set content = body.td.content %}
+{% endif %}
+
+<tbody class="{{body.class}}">
+  {% for item in body.td %}
+    {% set i = loop.index0 %}
+    {% include '../tr/tr.twig' %}
+  {% endfor %}
+</tbody>
+

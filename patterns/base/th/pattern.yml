@@ -1,0 +1,10 @@
+name: Table header cell
+description: Defines a header cell inside a table that contains data. 
+twig: ./th.twig
+sass: ./th.scss
+category: base
+data:
+  i: 0
+  th:
+    content:
+      - {class: base--th, text: Table header cell data}

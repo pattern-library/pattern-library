@@ -1,0 +1,12 @@
+{% set tr = head.tr %}
+{% if content is empty %}
+  {% set content = head.th.content %}
+{% endif %}
+
+<thead class="{{head.class}}">
+  {% for item in head.th %}
+    {% set i = loop.index0 %}
+    {% include '../tr/tr.twig' %}
+  {% endfor %}
+</thead>
+

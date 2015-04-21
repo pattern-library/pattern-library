@@ -1,0 +1,11 @@
+{% set head = table.head %}
+{% set body = table.body %}
+
+<table class="{{table.class}}">
+  {% if head is not null %}
+    {% include '../thead/thead.twig' %}
+  {% endif %} 
+  {% if body is not null %}
+    {% include '../tbody/tbody.twig' %}
+  {% endif %}
+</table>
