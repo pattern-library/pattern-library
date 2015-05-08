@@ -3,6 +3,7 @@ description: First level heading for associated section
 twig: ./h1.twig
 sass: ./h1.scss
 category: base
+subcategory: text
 data:
   header:
     text: Header 1

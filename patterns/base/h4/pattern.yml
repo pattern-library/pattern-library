@@ -3,6 +3,7 @@ description: Fourth level heading within an associated section
 twig: ./h4.twig
 sass: ./h4.scss
 category: base
+subcategory: text
 data:
   header:
     text: Header 4

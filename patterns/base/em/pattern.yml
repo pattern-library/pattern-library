@@ -3,6 +3,7 @@ description: Emphasized text
 twig: ./em.twig
 sass: ./em.scss
 category: base
+subcategory: text
 data:
   em: 
     text: Emphasized text
