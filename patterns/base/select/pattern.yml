@@ -3,6 +3,7 @@ description: Select represents a control that presents a menu of options.
 twig: ./select.twig
 sass: ./select.scss
 category: base
+subcategory: forms
 data:
   select:
     class: base--select

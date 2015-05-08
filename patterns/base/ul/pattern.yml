@@ -3,6 +3,7 @@ description: Unordered list of items
 twig: ./ul.twig
 sass: ./ul.scss
 category: base
+subcategory: lists
 data:
   ul:
     class: base--ul

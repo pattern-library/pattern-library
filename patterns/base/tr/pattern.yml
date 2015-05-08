@@ -3,6 +3,7 @@ description: The <tr> tag defines a row in an HTML table.
 twig: ./tr.twig
 sass: ./tr.scss
 category: base
+subcategory: tables
 data:
   tr:
     class: base--tr
