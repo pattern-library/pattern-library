@@ -1,0 +1,10 @@
+name: Basic Page
+description: A full html page template with the minimum amount of required elements
+twig: ./basic-age.twig
+category: pages
+subcategory: generic
+data:
+  page:
+    htmlClasses: no-js
+    content: Aenean commodo ligula eget dolor. Aenean massa. Cumo sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    bodyClasses: body-class

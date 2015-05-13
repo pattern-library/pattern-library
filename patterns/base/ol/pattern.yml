@@ -3,6 +3,7 @@ description: Ordered list of items
 twig: ./ol.twig
 sass: ./ol.scss
 category: base
+subcategory: lists
 data:
   ol:
     class: base--ol

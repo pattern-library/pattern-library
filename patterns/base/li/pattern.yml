@@ -3,6 +3,7 @@ description: Defines a list item.
 twig: ./li.twig
 sass: ./li.scss
 category: base
+subcategory: lists
 data:
   i: 0
   li:

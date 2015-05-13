@@ -3,6 +3,7 @@ description: Defines paragraphs of text within a page
 twig: ./p.twig
 sass: ./p.scss
 category: base
+subcategory: text
 data:
   paragraph:
     text: Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam maximus nisi tempus placerat suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus.

@@ -3,6 +3,7 @@ description: This element is used to create a control representing an item withi
 twig: ./option.twig
 sass: ./option.scss
 category: base
+subcategory: forms
 data:
   i: 0
   option:

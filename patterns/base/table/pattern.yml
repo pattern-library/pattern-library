@@ -3,6 +3,7 @@ description:
 twig: ./table.twig
 sass: ./table.scss
 category: base
+subcategory: tables
 data:
   table:
     class: base--table

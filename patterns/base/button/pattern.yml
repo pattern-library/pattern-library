@@ -3,6 +3,7 @@ description: A button element to trigger an action
 twig: ./button.twig
 sass: ./button.scss
 category: base
+subcategory: forms
 data:
   button: 
     class: base--button

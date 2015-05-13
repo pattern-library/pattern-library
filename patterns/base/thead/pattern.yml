@@ -3,6 +3,7 @@ description: The <thead> tag is used to group header content in an HTML table
 twig: ./thead.twig
 sass: ./thead.scss
 category: base
+subcategory: tables
 data:
   head:
     class: base--thead

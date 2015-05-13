@@ -3,6 +3,7 @@ description: The label element represents a caption in a user interface.
 twig: ./label.twig
 sass: ./label.scss
 category: base
+subcategory: forms
 data:
   label:
     for:

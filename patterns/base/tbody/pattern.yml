@@ -3,6 +3,7 @@ description: Defines one or more rows and cells that make up a table
 twig: ./tbody.twig
 sass: ./tbody.scss
 category: base
+subcategory: tables
 data:
   body:
     class: base--tbody

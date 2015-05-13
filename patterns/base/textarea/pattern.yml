@@ -3,6 +3,7 @@ description: A flexible and configurable area for a long-form text input.
 twig: ./textarea.twig
 sass: ./Textarea.scss
 category: base
+subcategory: forms
 data:
   textarea:
     rows: 10
