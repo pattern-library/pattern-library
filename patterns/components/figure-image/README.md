@@ -2,10 +2,25 @@
 
 A `figure` element with `figcaption` and an included `img` element from /base/img/img.html.
 
-## Available Classes
+## ClassNames
 
-Styling can be applied in the following ways:
+### Figure Image
 
-* `.base--figure-image` - class
-* `.base--STYLED figure` - `<input type="search">` tag inside a class of `.base--STYLED`
-* `%base--figure-image` - extended through Sass
+* default: `.base--figure-image`
+
+### Image
+
+* default: `.base--img`
+* as include: `.figure--image`
+
+## Default Output
+
+```
+<figure class="base--figure-image">
+
+	<img src="http://placehold.it/350x150&text=figure--image" alt="Aenean commodo ligula eget dolor. Aenean massa." class="figure--image">
+  
+  <figcaption>Aenean commodo ligula eget dolor. Aenean massa. Cumo sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</figcaption>
+
+</figure>
+```
