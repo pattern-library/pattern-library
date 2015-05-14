@@ -10,6 +10,6 @@ A base-level `img` element.
 
 ## Default Output
 
-```
+```html
 <img src="http://placehold.it/350x150&text=base--img" alt="Aenean commodo ligula eget dolor. Aenean massa." class="base--img">
 ```
