@@ -9,7 +9,7 @@ These are the files which may be in a single HTML pattern's directory. This imag
 * ![folder](http://scottnath.github.io/atlas/images/doctree-icons/folder-open.gif) example-pattern/
 
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) pattern.yml
-	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.html
+	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.twig
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.js
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) bower.json
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) README.md
@@ -32,7 +32,7 @@ This file contains paths to find supporting files, meta data, and dummy data to 
 ```
 name: Figure Image
 description: A `figure` element with `figcaption` and an included `img` element from /base/img/img.html.
-html: ./figure-image.html
+twig: ./figure-image.twig
 sass: ./sass/_figure-image.scss
 script: ./figure-image.js
 category: components
@@ -49,9 +49,9 @@ data:
     class: base--figure-image
 ```
 
-## Single-Pattern HTML File
+## Single-Pattern Template File
 
-Each single pattern folder *must* contain a `[pattern-name].html` (example-pattern.html) file. These files should *not* contain actual text, data, images, etc. Instead, patterns use curly-braces as data placeholders.
+Each single pattern folder *must* contain a `[pattern-name].[template]` (example-pattern.twig) file. These files should *not* contain actual text, data, images, etc. Instead, patterns use curly-braces as data placeholders. Even if they are .html files.
 
 ## Other Possible Single-Pattern Files
 
@@ -63,9 +63,9 @@ Typical bower.json file. Will contain dependencies for other patterns/scripts/et
 
 Should include usage examples
 
-### PATTERN.html
+### PATTERN.twig/swig/mustache/html
 
-A twig/swig-style template containing html, data-placeholders with curly braces, import-code for other patterns
+A reusable template containing html, data-placeholders with curly braces, import-code for other patterns
 
 ### PATTERN.js
 
@@ -75,7 +75,7 @@ A pattern's js file.
 
 A SASS file. **NOTE:** do not prefix this file with an underscore or it will be ignored when import-conversion happens.
 
-Following the [North Standards](https://github.com/north/north#css-naming-conventions), this file includes imported files for SASS partials:
+If you're following the [North Standards](https://github.com/north/north#css-naming-conventions), this file includes imported files for SASS partials:
 
 * ./sass/partials/_extends.scss
 * ./sass/partials/_mixins.scss
