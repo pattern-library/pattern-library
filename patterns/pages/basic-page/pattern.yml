@@ -1,6 +1,6 @@
 name: Basic Page
 description: A full html page template with the minimum amount of required elements
-twig: ./basic-age.twig
+twig: ./basic-page.twig
 category: pages
 subcategory: generic
 data:
