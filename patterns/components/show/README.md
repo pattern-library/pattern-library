@@ -10,7 +10,7 @@ ClassNames follow the [BEM Methodology](https://css-tricks.com/bem-101/)
 `.show`
 
 ### figure element
-`.show__figure
+`.show__figure`
 
 ### image element (inside figure element)
 `.show__figure__image`
