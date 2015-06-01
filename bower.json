@@ -1,0 +1,23 @@
+{
+  "name": "pattern-library",
+  "version": "0.0.1",
+  "authors": [
+    "Scott Nath @scottnath"
+  ],
+  "description": "A repository of re-usable HTML patterns and their supporting files",
+  "keywords": [
+    "pattern",
+    "library",
+    "patterns",
+    "html"
+  ],
+  "license": "MIT",
+  "homepage": "pattern-library.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
