@@ -1,6 +1,10 @@
 # pattern-library
 A repository of HTML Patterns and their supporting files.
 
+## Installation
+
+```bower install pattern-library```
+
 
 ## Single-Pattern Folder Contents
 
