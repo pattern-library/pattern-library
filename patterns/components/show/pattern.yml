@@ -12,7 +12,7 @@ data:
     figure:
       class: show__figure
       img:
-        src: http://placehold.it/1920x1080&text=show--image
+        src: http://placehold.it/640x480&text=show__image-default
         alt: Show image alternative text for the alt tag
         class: show__figure__image show__image
       caption:
