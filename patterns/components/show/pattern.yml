@@ -1,6 +1,7 @@
 name: Show
 description: A (TV) show component with an `img`
 html: ./show.html
+react: ./show.rt
 category: components
 subcategory: entertainment
 data:
