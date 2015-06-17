@@ -1,0 +1,12 @@
+name: Subscript
+description: Text that is displayed lower (generally)
+twig: ./subscript.twig
+category: base
+subcategory: inline
+atomic:
+	patternType: atoms
+	patternSubType: inline
+data:
+  sub:
+    text: subscript
+    class: base__sub

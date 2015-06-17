@@ -1,0 +1,12 @@
+name: Superscript
+description: Text that should be displayed higher (generally)
+twig: ./superscript.twig
+category: base
+subcategory: inline
+atomic:
+	patternType: atoms
+	patternSubType: inline
+data:
+  sup:
+    text: superscript
+    class: base__sup

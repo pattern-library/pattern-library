@@ -1,0 +1,13 @@
+name: Table cell
+description: Defines a cell inside a table that contains data. 
+twig: ./td.twig
+category: base
+subcategory: tables
+atomic:
+	patternType: atoms
+	patternSubType: tables
+data:
+  i: 0
+  td:
+    content:
+      - {class: base__td, text: Table cell data}

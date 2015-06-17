@@ -1,0 +1,26 @@
+name: Button
+description: A button element to trigger an action
+twig: ./button.twig
+category: base
+subcategory: forms
+atomic:
+  patternType: atoms
+  patternSubType: forms
+data:
+  button: 
+    class: base__button
+    label: Click Me
+    type: button
+  versions:
+    basic:
+      class: base__button
+      label: Click Me
+      type: button
+    submit:
+      class: base__button
+      label: Submit
+      type: submit
+    reset:
+      class: base__button
+      label: Reset
+      type: reset

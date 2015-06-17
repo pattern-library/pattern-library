@@ -1,0 +1,12 @@
+name: Heading Level 4
+description: Fourth level heading within an associated section
+twig: ./h4.twig
+category: base
+subcategory: text
+atomic:
+	patternType: atoms
+	patternSubType: text
+data:
+  header:
+    text: Header 4
+    class: base__h4

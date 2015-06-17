@@ -1,0 +1,15 @@
+name: Video
+description: Used to embed video content
+twig: ./video.twig
+category: base
+subcategory: media
+atomic:
+  patternType: atoms
+  patternSubType: media
+data:
+  video:
+    class: base__video
+    src: http://media.w3.org/2010/05/bunny/movie.ogv
+    width: 640
+    height: 480
+    controls: controls

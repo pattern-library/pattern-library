@@ -1,0 +1,29 @@
+name: Table
+description: 
+twig: ./table.twig
+category: base
+subcategory: tables
+atomic:
+  patternType: atoms
+  patternSubType: tables
+data:
+  table:
+    class: base__table
+    head:
+      class: base__thead
+      tr: 
+        class: base__tr
+      th:
+        content:
+          - {class: base__th, text: table header data}
+          - {class: base__th, text: table header data 2}
+          - {class: base__th, text: table header data 3}
+    body:
+      class: base__tbody
+      tr: 
+        class: base__tr
+      td:
+        content:
+          - {class: base__td, text: table data 1}
+          - {class: base__td, text: table data 2}
+          - {class: base__td, text: table data 3}

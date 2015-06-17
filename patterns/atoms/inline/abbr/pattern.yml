@@ -1,0 +1,13 @@
+name: Abbr
+description: Represents an abbreviation
+twig: ./abbr.twig
+category: base
+subcategory: inline
+atomic:
+	patternType: atoms
+	patternSubType: inline
+data:
+  abbr:
+    text: HTML
+    title: HyperText Markup Language
+    class: base__abbr

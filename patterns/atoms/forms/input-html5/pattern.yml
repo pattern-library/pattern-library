@@ -1,0 +1,57 @@
+name: Inputs: HTML5
+description: Text input boxes - HTML5 versions
+twig: ./input-html5.twig
+category: base
+subcategory: forms
+atomic:
+	patternType: atoms
+	patternSubType: forms
+data:
+  input:
+  	color:
+  		class: base_input base__input__color
+  		id: color
+  		labelcontent: Color Input
+  		placeholder: color input
+      value: #000000
+    number:
+      class: base_input base__input__number
+      id: number
+      labelcontent: Number Input
+  	range:
+  		class: base_input base__input__range
+  		id: range
+  		labelcontent: Range Input
+      min: 0
+      max: 10
+    date:
+      class: base_input base__input__date
+      id: date
+      labelcontent: Month Input
+      placeholder: month input
+      value: 1970-01-01
+    month:
+      class: base_input base__input__month
+      id: month
+      labelcontent: Date Input
+      placeholder: date input
+      value: 1970-01
+    week:
+      class: base_input base__input__week
+      id: week
+      labelcontent: Week Input
+      placeholder: week input
+      value: 1970-W01
+    datetime:
+      class: base_input base__input__datetime
+      id: datetime
+      labelcontent: DateTime Input
+      placeholder: datetime input
+      value: 1970-01-01T00:00:00Z
+    datetimeLocal:
+      class: base_input base__input__datetimelocal
+      id: datetimelocal
+      labelcontent: Datetime Local Input
+      placeholder: datetime local input
+      value: 1970-01-01T00:00
+

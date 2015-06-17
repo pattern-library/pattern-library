@@ -19,8 +19,5 @@
   },
   "homepage": "https://github.com/pattern-library/pattern-library",
   "devDependencies": {
-    "fs-extra": "^0.16.5",
-    "js-yaml": "^3.2.7",
-    "should": "^5.2.0"
   }
 }

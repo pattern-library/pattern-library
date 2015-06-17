@@ -1,0 +1,18 @@
+name: Ordered List
+description: Ordered list of items
+twig: ./ol.twig
+category: base
+subcategory: lists
+atomic:
+	patternType: atoms
+	patternSubType: lists
+data:
+  ol:
+    class: base__ol
+    li:
+      - {class: base__li, text: List item 1}
+      - {class: base__li, text: List item 2}
+      - {class: base__li, text: List item 3}
+      - {class: base__li, text: Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec sagittis congue consequat. Quisque vel iaculis eros. Quisque varius mi ac erat dapibus id pulvinar mauris lacinia.}
+      - {class: base__li, text: List item 5}
+
