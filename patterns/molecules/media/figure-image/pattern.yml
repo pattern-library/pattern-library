@@ -1,9 +1,11 @@
 name: Figure Image
-description: A `figure` element with `figcaption` and an included `img` element from /base/img/img.html.
+description: A `figure` element with `figcaption` and an included `img` element from /atoms/images/img/img.twig.
 twig: ./figure-image.twig
-sass: ./sass/figure-image.scss
-script: ./figure-image.js
 category: components
+subcategory: media
+atomic:
+  patternType: molecules
+  patternSubType: media
 includes:
   - ../../base/img
 options:
@@ -11,9 +13,9 @@ options:
 data:
   figure:
     img:
-      src: http://placehold.it/350x150&text=figure--image
+      src: http://placehold.it/350x150&text=figure__image
       alt: Aenean commodo ligula eget dolor. Aenean massa.
-      class: figure--image
+      class: figure__image
     caption:
       text: Aenean commodo ligula eget dolor. Aenean massa. Cumo sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    class: base--figure-image
+    class: base__figure-image
