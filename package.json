@@ -1,6 +1,6 @@
 {
   "name": "pattern-library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A repository of HTML Patterns and their supporting files.",
   "repository": {
     "type": "git",
@@ -18,6 +18,5 @@
     "url": "https://github.com/pattern-library/pattern-library/issues"
   },
   "homepage": "https://github.com/pattern-library/pattern-library",
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
