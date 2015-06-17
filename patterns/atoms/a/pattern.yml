@@ -4,6 +4,9 @@ twig: ./a.twig
 sass: ./a.scss
 category: base
 subcategory: text
+atomic:
+	patternType: atoms
+	patternSubType: text
 data:
   a:
     text: Anchor Link
