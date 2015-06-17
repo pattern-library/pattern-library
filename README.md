@@ -3,6 +3,12 @@ A repository of HTML Patterns and their supporting files.
 
 ## Installation
 
+### NPM
+
+```npm install pattern-library```
+
+### Bower
+
 ```bower install pattern-library```
 
 
