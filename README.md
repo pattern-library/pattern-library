@@ -1,4 +1,4 @@
-# pattern-library
+# Pattern Library
 A repository of HTML Patterns and their supporting files.
 
 ## Installation
@@ -14,21 +14,17 @@ A repository of HTML Patterns and their supporting files.
 
 ## Single-Pattern Folder Contents
 
-These are the files which may be in a single HTML pattern's directory. This imaginary pattern is called `example-pattern`.
+These are the files which *may* be in a single HTML pattern's directory. This imaginary pattern is called `example-pattern`. 
+
+The *only* required files are `pattern.yml` and a pattern file (in any templating language or plain html.)
 
 * ![folder](http://scottnath.github.io/atlas/images/doctree-icons/folder-open.gif) example-pattern/
 
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) pattern.yml
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.twig
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.js
-	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) bower.json
 	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) README.md
-	* ![folder](http://scottnath.github.io/atlas/images/doctree-icons/folder-open.gif) sass/
-		* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.scss
-		* ![folder](http://scottnath.github.io/atlas/images/doctree-icons/folder-open.gif) partials/
-			* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) _extends.scss
-			* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) _mixins.scss
-			* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) _variables.scss
+	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.scss
 	* ![folder](http://scottnath.github.io/atlas/images/doctree-icons/folder-open.gif) test/
 		* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) main.js
 
@@ -43,9 +39,13 @@ This file contains paths to find supporting files, meta data, and dummy data to 
 name: Figure Image
 description: A `figure` element with `figcaption` and an included `img` element from /base/img/img.html.
 twig: ./figure-image.twig
-sass: ./sass/_figure-image.scss
+sass: ./_figure-image.scss
 script: ./figure-image.js
 category: components
+subcategory: media
+atomic:
+  patternType: molecules
+  patternSubType: media
 options:
 	foo: bar
 data:
@@ -65,10 +65,6 @@ Each single pattern folder *must* contain a `[pattern-name].[template]` (example
 
 ## Other Possible Single-Pattern Files
 
-### bower.json
-
-Typical bower.json file. Will contain dependencies for other patterns/scripts/etc as needed
-
 ### README.md
 
 Should include usage examples
@@ -81,15 +77,9 @@ A reusable template containing html, data-placeholders with curly braces, import
 
 A pattern's js file. 
 
-### ./sass/PATTERN.scss
+### ./PATTERN.scss
 
 A SASS file. **NOTE:** do not prefix this file with an underscore or it will be ignored when import-conversion happens.
-
-If you're following the [North Standards](https://github.com/north/north#css-naming-conventions), this file includes imported files for SASS partials:
-
-* ./sass/partials/_extends.scss
-* ./sass/partials/_mixins.scss
-* ./sass/partials/_variables.scss
 
 ### ./test/main.js
 
