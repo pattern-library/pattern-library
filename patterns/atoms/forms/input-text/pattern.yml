@@ -1,4 +1,4 @@
-name: Inputs: Text
+name: Inputs - Text
 description: Text input boxes
 twig: ./input-text.twig
 category: base

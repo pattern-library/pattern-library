@@ -1,4 +1,4 @@
-name: Inputs: HTML5
+name: Inputs - HTML5
 description: Text input boxes - HTML5 versions
 twig: ./input-html5.twig
 category: base
