@@ -9,7 +9,7 @@ atomic:
 includes:
   - ../../base/img
 options:
-	foo: bar
+  foo: bar
 data:
   figure:
     img:

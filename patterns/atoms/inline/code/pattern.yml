@@ -4,8 +4,8 @@ twig: ./code.twig
 category: base
 subcategory: inline
 atomic:
-	patternType: atoms
-	patternSubType: inline
+  patternType: atoms
+  patternSubType: inline
 data:
   code:
     snippet: '<link rel="stylesheet" href="#" />'

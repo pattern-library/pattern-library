@@ -4,8 +4,8 @@ twig: ./td.twig
 category: base
 subcategory: tables
 atomic:
-	patternType: atoms
-	patternSubType: tables
+  patternType: atoms
+  patternSubType: tables
 data:
   i: 0
   td:

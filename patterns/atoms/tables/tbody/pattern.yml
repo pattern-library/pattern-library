@@ -4,8 +4,8 @@ twig: ./tbody.twig
 category: base
 subcategory: tables
 atomic:
-	patternType: atoms
-	patternSubType: tables
+  patternType: atoms
+  patternSubType: tables
 data:
   body:
     class: base__tbody

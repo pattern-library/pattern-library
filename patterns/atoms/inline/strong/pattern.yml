@@ -4,8 +4,8 @@ twig: ./strong.twig
 category: base
 subcategory: text
 atomic:
-	patternType: atoms
-	patternSubType: inline
+  patternType: atoms
+  patternSubType: inline
 data:
   strong:
     text: Important text

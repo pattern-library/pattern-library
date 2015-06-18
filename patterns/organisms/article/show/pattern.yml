@@ -4,6 +4,9 @@ html: ./show.html
 react: ./show.rt
 category: components
 subcategory: entertainment
+atomic:
+  patternType: organisms
+  patternSubType: article
 data:
   show:
     class: show

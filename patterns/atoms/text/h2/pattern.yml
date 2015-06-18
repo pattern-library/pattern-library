@@ -4,8 +4,8 @@ twig: ./h2.twig
 category: base
 subcategory: text
 atomic:
-	patternType: atoms
-	patternSubType: text
+  patternType: atoms
+  patternSubType: text
 data:
   header:
     text: Header 2

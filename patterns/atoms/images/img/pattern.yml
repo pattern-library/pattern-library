@@ -5,8 +5,8 @@ css: ./img.css
 category: base
 subcategory: images
 atomic:
-	patternType: atoms
-	patternSubType: images
+  patternType: atoms
+  patternSubType: images
 data:
   img:
     src: http://placehold.it/350x150&text=base__img

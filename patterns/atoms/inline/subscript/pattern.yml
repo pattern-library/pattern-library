@@ -4,8 +4,8 @@ twig: ./subscript.twig
 category: base
 subcategory: inline
 atomic:
-	patternType: atoms
-	patternSubType: inline
+  patternType: atoms
+  patternSubType: inline
 data:
   sub:
     text: subscript

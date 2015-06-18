@@ -4,8 +4,8 @@ twig: ./pre.twig
 category: base
 subcategory: text
 atomic:
-	patternType: atoms
-	patternSubType: text
+  patternType: atoms
+  patternSubType: text
 data:
   pre:
     class: base__pre

@@ -4,8 +4,8 @@ twig: ./em.twig
 category: base
 subcategory: text
 atomic:
-	patternType: atoms
-	patternSubType: inline
+  patternType: atoms
+  patternSubType: inline
 data:
   em: 
     text: Emphasized text

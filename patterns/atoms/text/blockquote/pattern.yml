@@ -4,8 +4,8 @@ twig: ./blockquote.twig
 category: base
 subcategory: text
 atomic:
-	patternType: atoms
-	patternSubType: text
+  patternType: atoms
+  patternSubType: text
 data:
   blockquote:
     text: Blockquote

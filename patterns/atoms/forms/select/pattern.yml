@@ -4,8 +4,8 @@ twig: ./select.twig
 category: base
 subcategory: forms
 atomic:
-	patternType: atoms
-	patternSubType: forms
+  patternType: atoms
+  patternSubType: forms
 data:
   select:
     class: base__select

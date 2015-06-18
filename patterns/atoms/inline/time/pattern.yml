@@ -4,10 +4,10 @@ twig: ./time.twig
 category: base
 subcategory: text
 atomic:
-	patternType: atoms
-	patternSubType: inline
+  patternType: atoms
+  patternSubType: inline
 data:
   time:
-  	datetime: 2016-04-20T16:19+00:00
+    datetime: 2016-04-20T16:19+00:00
     text: Next April
     class: base__time

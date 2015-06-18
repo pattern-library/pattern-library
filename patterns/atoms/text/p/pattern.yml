@@ -4,8 +4,8 @@ twig: ./p.twig
 category: base
 subcategory: text
 atomic:
-	patternType: atoms
-	patternSubType: text
+  patternType: atoms
+  patternSubType: text
 data:
   paragraph:
     text: Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam maximus nisi tempus placerat suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus.

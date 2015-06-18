@@ -4,8 +4,8 @@ twig: ./hr.twig
 category: base
 subcategory: text
 atomic:
-	patternType: atoms
-	patternSubType: text
+  patternType: atoms
+  patternSubType: text
 data:
   hr:
     class: base__hr

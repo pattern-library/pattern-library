@@ -4,8 +4,8 @@ twig: ./ul.twig
 category: base
 subcategory: lists
 atomic:
-	patternType: atoms
-	patternSubType: lists
+  patternType: atoms
+  patternSubType: lists
 data:
   ul:
     class: base__ul

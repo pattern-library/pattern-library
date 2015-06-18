@@ -4,8 +4,8 @@ twig: ./ol.twig
 category: base
 subcategory: lists
 atomic:
-	patternType: atoms
-	patternSubType: lists
+  patternType: atoms
+  patternSubType: lists
 data:
   ol:
     class: base__ol

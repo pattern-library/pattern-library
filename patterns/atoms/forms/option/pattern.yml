@@ -4,8 +4,8 @@ twig: ./option.twig
 category: base
 subcategory: forms
 atomic:
-	patternType: atoms
-	patternSubType: forms
+  patternType: atoms
+  patternSubType: forms
 data:
   i: 0
   option:

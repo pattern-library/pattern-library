@@ -4,24 +4,24 @@ twig: ./input-html5.twig
 category: base
 subcategory: forms
 atomic:
-	patternType: atoms
-	patternSubType: forms
+  patternType: atoms
+  patternSubType: forms
 data:
   input:
-  	color:
-  		class: base_input base__input__color
-  		id: color
-  		labelcontent: Color Input
-  		placeholder: color input
-      value: #000000
+    color:
+      class: base_input base__input__color
+      id: color
+      labelcontent: Color Input
+      placeholder: color input
+      value: "#000000"
     number:
       class: base_input base__input__number
       id: number
       labelcontent: Number Input
-  	range:
-  		class: base_input base__input__range
-  		id: range
-  		labelcontent: Range Input
+    range:
+      class: base_input base__input__range
+      id: range
+      labelcontent: Range Input
       min: 0
       max: 10
     date:

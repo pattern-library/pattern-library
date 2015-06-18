@@ -4,8 +4,8 @@ twig: ./audio.twig
 category: base
 subcategory: media
 atomic:
-	patternType: atoms
-	patternSubType: media
+  patternType: atoms
+  patternSubType: media
 data:
   audio:
     controls: controls
