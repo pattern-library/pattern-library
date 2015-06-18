@@ -1,0 +1,9 @@
+name: Blockquote
+description: An extended quotation
+twig: ./blockquote.twig
+category: atoms
+subcategory: text
+data:
+  blockquote:
+    text: Blockquote
+    class: base__blockquote

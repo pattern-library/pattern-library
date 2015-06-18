@@ -1,0 +1,9 @@
+name: Heading Level 2
+description: Second level heading within an associated section
+twig: ./h2.twig
+category: atoms
+subcategory: text
+data:
+  header:
+    text: Header 2
+    class: base__h2

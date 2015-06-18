@@ -1,0 +1,8 @@
+name: Pre
+description: Preformatted text
+twig: ./pre.twig
+category: atoms
+subcategory: text
+data:
+  pre:
+    class: base__pre

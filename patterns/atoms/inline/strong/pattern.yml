@@ -1,0 +1,9 @@
+name: Strong
+description: Important (strong) text
+twig: ./strong.twig
+category: atoms
+subcategory: text
+data:
+  strong:
+    text: Important text
+    class: base__strong

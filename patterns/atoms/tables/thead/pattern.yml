@@ -1,0 +1,15 @@
+name:  Table header
+description: The <thead> tag is used to group header content in an HTML table
+twig: ./thead.twig
+category: atoms
+subcategory: tables
+data:
+  head:
+    class: base__thead
+    tr: 
+      class: base__tr
+    th:
+      content:
+        - {class: base__th, text: table header data}
+        - {class: base__th, text: table header data 2}
+        - {class: base__th, text: table header data 3}

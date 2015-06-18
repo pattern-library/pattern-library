@@ -1,0 +1,9 @@
+name: Code
+description: Computer code in text
+twig: ./code.twig
+category: atoms
+subcategory: inline
+data:
+  code:
+    snippet: '<link rel="stylesheet" href="#" />'
+    class: base__code

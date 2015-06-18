@@ -1,0 +1,18 @@
+name: Figure Image
+description: A `figure` element with `figcaption` and an included `img` element from /atoms/images/img/img.twig.
+twig: ./figure-image.twig
+category: molecules
+subcategory: media
+includes:
+  - ../../base/img
+options:
+  foo: bar
+data:
+  figure:
+    img:
+      src: http://placehold.it/350x150&text=figure__image
+      alt: Aenean commodo ligula eget dolor. Aenean massa.
+      class: figure__image
+    caption:
+      text: Aenean commodo ligula eget dolor. Aenean massa. Cumo sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    class: base__figure-image

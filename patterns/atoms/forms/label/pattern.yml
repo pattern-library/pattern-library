@@ -1,0 +1,10 @@
+name: Label
+description: The label element represents a caption in a user interface.
+twig: ./label.twig
+category: atoms
+subcategory: forms
+data:
+  label:
+    for: txtarea1
+    text: Label
+    class: base__label

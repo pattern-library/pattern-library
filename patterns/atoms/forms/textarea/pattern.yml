@@ -1,0 +1,12 @@
+name: Textarea
+description: A flexible and configurable area for a long-form text input.
+twig: ./textarea.twig
+category: atoms
+subcategory: forms
+data:
+  textarea:
+    rows: 10
+    cols: 30
+    id: txtarea1
+    name: text-area
+    class: base__textarea

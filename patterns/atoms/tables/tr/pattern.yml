@@ -1,0 +1,14 @@
+name: Table row
+description: The <tr> tag defines a row in an HTML table.
+twig: ./tr.twig
+category: atoms
+subcategory: tables
+data:
+  tr:
+    class: base__tr
+    th:
+      content:
+        - {class: base__th, text: Table cell data}
+    td:
+      content:
+        - {class: base__td, text: Table header cell}

@@ -1,0 +1,24 @@
+/* Visibility Classes */
+.hide__small {
+  @media all and (max-width: $bp-med) {
+    display: none;
+  }
+}
+
+.hide__med {
+  @media all and (min-width: $bp-med) and (max-width: $bp-large) {
+    display: none;
+  }
+}
+
+.hide__large {
+  @media all and (min-width: $bp-large) {
+    display: none;
+  }
+}
+
+.hide__large-2 {
+  @media all and (min-width:$bp-large-2) {
+    display: none;
+  }
+}

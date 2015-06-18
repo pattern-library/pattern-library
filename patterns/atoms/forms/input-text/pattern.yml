@@ -1,0 +1,41 @@
+name: Inputs - Text
+description: Text input boxes
+twig: ./input-text.twig
+category: atoms
+subcategory: forms
+data:
+  input:
+    text:
+      class: base_input base__input__text
+      id: text
+      labelcontent: Text Input
+      placeholder: text input
+    password:
+      class: base_input base__input__password
+      id: password
+      labelcontent: Password Input
+      placeholder: Type your Password
+    checkbox:
+      class: base_input base__input__checkbox
+      id: checkbox
+      labelcontent: Checkbox Input
+    radio:
+      class: base_input base__input__radio
+      id: radio
+      labelcontent: Radio Input
+    url:
+      class: base_input base__input__url
+      id: url
+      labelcontent: URL Input
+      placeholder: http://example.com
+    email:
+      class: base_input base__input__email
+      id: email
+      labelcontent: EMAIL Input
+      placeholder: name@example.com
+    search:
+      class: base_input base__input__search
+      id: search
+      labelcontent: Search Input
+      placeholder: Enter Search Term
+

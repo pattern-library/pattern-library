@@ -1,0 +1,10 @@
+name: Audio
+description: Used to embed sound content in documents
+twig: ./audio.twig
+category: atoms
+subcategory: media
+data:
+  audio:
+    controls: controls
+    class: base__audio
+    src: http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg

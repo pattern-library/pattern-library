@@ -1,0 +1,10 @@
+name: Time
+description: A time or date
+twig: ./time.twig
+category: atoms
+subcategory: text
+data:
+  time:
+    datetime: 2016-04-20T16:19+00:00
+    text: Next April
+    class: base__time

@@ -1,0 +1,29 @@
+name: Message
+description: A message component with a content area
+twig: ./message.twig
+category: molecules
+subcategory: messaging
+options:
+  version: info
+data:
+  message:
+    class: message
+    content:
+      class: message__CONTENT
+      message: Aenean commodo ligula eget dolor. Aenean massa.
+      versions:
+        alert:
+          class: message__ALERT
+          message: Alert message lorem ipsum
+        error:
+          class: message__ERROR
+          message: Error message lorem ipsum
+        info:
+          class: message__INFO
+          message: Info message lorem ipsum
+        success:
+          class: message__SUCCESS
+          message: Success message lorem ipsum
+        warning:
+          class: message__WARNING
+          message: Alert message lorem ipsum

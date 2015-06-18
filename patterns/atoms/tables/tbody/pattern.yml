@@ -1,0 +1,15 @@
+name: Table body element
+description: Defines one or more rows and cells that make up a table
+twig: ./tbody.twig
+category: atoms
+subcategory: tables
+data:
+  body:
+    class: base__tbody
+    tr: 
+      class: base__tr
+    td:
+      content:
+        - {class: base__td, text: table data 1}
+        - {class: base__td, text: table data 2}
+        - {class: base__td, text: table data 3}

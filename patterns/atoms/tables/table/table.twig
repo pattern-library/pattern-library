@@ -1,0 +1,11 @@
+{% set head = table.head %}
+{% set body = table.body %}
+
+<table class="{{table.class}}">
+  {% if head is not null %}
+    {% include 'atoms/tables/thead/thead.twig' %}
+  {% endif %} 
+  {% if body is not null %}
+    {% include 'atoms/tables/tbody/tbody.twig' %}
+  {% endif %}
+</table>

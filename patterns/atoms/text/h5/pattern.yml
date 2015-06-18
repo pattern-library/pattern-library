@@ -1,0 +1,9 @@
+name: Heading Level 5
+description: Fifth level heading within an associated section
+twig: ./h5.twig
+category: atoms
+subcategory: text
+data:
+  header:
+    text: Header 5
+    class: base__h5

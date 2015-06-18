@@ -1,0 +1,10 @@
+name: Hyperlink
+description: Defines a hyperlink or an anchor element
+twig: ./a.twig
+category: atoms
+subcategory: inline
+data:
+  a:
+    text: Anchor Link
+    class: base__a
+    href: http://example.com

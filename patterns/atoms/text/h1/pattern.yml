@@ -1,0 +1,9 @@
+name: Heading Level 1
+description: First level heading for associated section
+twig: ./h1.twig
+category: atoms
+subcategory: text
+data:
+  header:
+    text: Header 1
+    class: base__h1

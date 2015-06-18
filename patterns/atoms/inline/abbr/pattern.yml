@@ -1,0 +1,10 @@
+name: Abbr
+description: Represents an abbreviation
+twig: ./abbr.twig
+category: atoms
+subcategory: inline
+data:
+  abbr:
+    text: HTML
+    title: HyperText Markup Language
+    class: base__abbr

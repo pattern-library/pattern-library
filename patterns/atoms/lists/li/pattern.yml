@@ -1,0 +1,9 @@
+name: List Item
+description: Defines a list item.
+twig: ./li.twig
+category: atoms
+subcategory: lists
+data:
+  i: 0
+  li:
+    - {class: base__li, text: List item 1}
