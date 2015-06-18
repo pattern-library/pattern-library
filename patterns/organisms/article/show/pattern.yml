@@ -1,11 +1,8 @@
 name: Show
 description: A (TV) show component with an `img`
 html: ./show.html
-category: components
-subcategory: entertainment
-atomic:
-  patternType: organisms
-  patternSubType: article
+category: organisms
+subcategory: article
 data:
   show:
     class: show

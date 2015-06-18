@@ -1,11 +1,8 @@
 name: Blockquote
 description: An extended quotation
 twig: ./blockquote.twig
-category: base
+category: atoms
 subcategory: text
-atomic:
-  patternType: atoms
-  patternSubType: text
 data:
   blockquote:
     text: Blockquote

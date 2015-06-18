@@ -1,11 +1,8 @@
 name: Select 
 description: Select represents a control that presents a menu of options. 
 twig: ./select.twig
-category: base
+category: atoms
 subcategory: forms
-atomic:
-  patternType: atoms
-  patternSubType: forms
 data:
   select:
     class: base__select

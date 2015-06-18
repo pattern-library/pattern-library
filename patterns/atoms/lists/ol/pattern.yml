@@ -1,11 +1,8 @@
 name: Ordered List
 description: Ordered list of items
 twig: ./ol.twig
-category: base
+category: atoms
 subcategory: lists
-atomic:
-  patternType: atoms
-  patternSubType: lists
 data:
   ol:
     class: base__ol

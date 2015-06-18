@@ -1,0 +1,8 @@
+name: Fonts
+description: A way to show site fonts
+twig: ./fonts.twig
+category: atoms
+subcategory: global
+data:
+  font2: 
+    class: font__secondary

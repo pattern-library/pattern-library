@@ -1,11 +1,8 @@
 name: Inputs - Text
 description: Text input boxes
 twig: ./input-text.twig
-category: base
+category: atoms
 subcategory: forms
-atomic:
-  patternType: atoms
-  patternSubType: forms
 data:
   input:
     text:

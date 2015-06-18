@@ -1,11 +1,8 @@
 name: Audio
 description: Used to embed sound content in documents
 twig: ./audio.twig
-category: base
+category: atoms
 subcategory: media
-atomic:
-  patternType: atoms
-  patternSubType: media
 data:
   audio:
     controls: controls

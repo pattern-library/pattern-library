@@ -1,0 +1,14 @@
+name: Visibility
+description: Examples of `visibility` css trait
+twig: ./visibility.twig
+category: atoms
+subcategory: global
+data:
+  visibility: 
+  versions:
+    small:
+      class: hide__small
+    medium:
+      class: hide__med
+    large:
+      class: hide__large

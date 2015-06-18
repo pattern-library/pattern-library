@@ -1,11 +1,8 @@
 name: List Item
 description: Defines a list item.
 twig: ./li.twig
-category: base
+category: atoms
 subcategory: lists
-atomic:
-  patternType: atoms
-  patternSubType: lists
 data:
   i: 0
   li:

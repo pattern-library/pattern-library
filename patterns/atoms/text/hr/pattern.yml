@@ -1,11 +1,8 @@
 name: Horizontal Rule
 description: A thematic break between paragraph-level elements
 twig: ./hr.twig
-category: base
+category: atoms
 subcategory: text
-atomic:
-  patternType: atoms
-  patternSubType: text
 data:
   hr:
     class: base__hr

@@ -3,9 +3,9 @@
 
 <table class="{{table.class}}">
   {% if head is not null %}
-    {% include '../thead/thead.twig' %}
+    {% include 'atoms/tables/thead/thead.twig' %}
   {% endif %} 
   {% if body is not null %}
-    {% include '../tbody/tbody.twig' %}
+    {% include 'atoms/tables/tbody/tbody.twig' %}
   {% endif %}
 </table>

@@ -3,9 +3,6 @@ description: Used to embed video content
 twig: ./video.twig
 category: base
 subcategory: media
-atomic:
-  patternType: atoms
-  patternSubType: media
 data:
   video:
     class: base__video

@@ -1,11 +1,8 @@
 name: Button
 description: A button element to trigger an action
 twig: ./button.twig
-category: base
+category: atoms
 subcategory: forms
-atomic:
-  patternType: atoms
-  patternSubType: forms
 data:
   button: 
     class: base__button

@@ -1,11 +1,8 @@
 name: Code
 description: Computer code in text
 twig: ./code.twig
-category: base
+category: atoms
 subcategory: inline
-atomic:
-  patternType: atoms
-  patternSubType: inline
 data:
   code:
     snippet: '<link rel="stylesheet" href="#" />'

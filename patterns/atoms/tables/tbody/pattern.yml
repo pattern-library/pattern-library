@@ -1,11 +1,8 @@
 name: Table body element
 description: Defines one or more rows and cells that make up a table
 twig: ./tbody.twig
-category: base
+category: atoms
 subcategory: tables
-atomic:
-  patternType: atoms
-  patternSubType: tables
 data:
   body:
     class: base__tbody

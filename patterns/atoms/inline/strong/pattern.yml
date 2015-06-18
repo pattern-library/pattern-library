@@ -1,11 +1,8 @@
 name: Strong
 description: Important (strong) text
 twig: ./strong.twig
-category: base
+category: atoms
 subcategory: text
-atomic:
-  patternType: atoms
-  patternSubType: inline
 data:
   strong:
     text: Important text

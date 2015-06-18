@@ -2,11 +2,8 @@ name: Base Image
 description: A basic img html pattern
 twig: ./img.twig
 css: ./img.css
-category: base
+category: atoms
 subcategory: images
-atomic:
-  patternType: atoms
-  patternSubType: images
 data:
   img:
     src: http://placehold.it/350x150&text=base__img

@@ -1,11 +1,8 @@
 name: Figure Image
 description: A `figure` element with `figcaption` and an included `img` element from /atoms/images/img/img.twig.
 twig: ./figure-image.twig
-category: components
+category: molecules
 subcategory: media
-atomic:
-  patternType: molecules
-  patternSubType: media
 includes:
   - ../../base/img
 options:

@@ -1,11 +1,8 @@
 name: Em
 description: Emphasized text
 twig: ./em.twig
-category: base
+category: atoms
 subcategory: text
-atomic:
-  patternType: atoms
-  patternSubType: inline
 data:
   em: 
     text: Emphasized text

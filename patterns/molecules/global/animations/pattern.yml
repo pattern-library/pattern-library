@@ -1,0 +1,13 @@
+name: Animations
+description: CSS animations example
+twig: ./animations.twig
+category: molecules
+subcategory: global
+data:
+  animations: 
+    class: demo__animate
+    versions:
+      fade:
+        class: demo__animate__fade
+      move:
+        class: demo__animate__move

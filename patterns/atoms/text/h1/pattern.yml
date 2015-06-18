@@ -1,11 +1,8 @@
 name: Heading Level 1
 description: First level heading for associated section
 twig: ./h1.twig
-category: base
+category: atoms
 subcategory: text
-atomic:
-  patternType: atoms
-  patternSubType: text
 data:
   header:
     text: Header 1

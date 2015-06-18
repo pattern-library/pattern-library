@@ -1,11 +1,8 @@
 name: Paragraph
 description: Represents a paragraph of text
 twig: ./p.twig
-category: base
+category: atoms
 subcategory: text
-atomic:
-  patternType: atoms
-  patternSubType: text
 data:
   paragraph:
     text: Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam maximus nisi tempus placerat suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus.

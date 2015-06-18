@@ -1,11 +1,8 @@
 name: Time
 description: A time or date
 twig: ./time.twig
-category: base
+category: atoms
 subcategory: text
-atomic:
-  patternType: atoms
-  patternSubType: inline
 data:
   time:
     datetime: 2016-04-20T16:19+00:00

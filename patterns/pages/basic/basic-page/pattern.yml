@@ -2,10 +2,7 @@ name: Basic Page
 description: A full html page template with the minimum amount of required elements
 twig: ./basic-page.twig
 category: pages
-subcategory: generic
-atomic:
-  patternType: pages
-  patternSubType: basic
+subcategory: basic
 data:
   page:
     htmlClasses: no-js

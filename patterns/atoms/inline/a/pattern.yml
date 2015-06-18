@@ -1,11 +1,8 @@
 name: Hyperlink
 description: Defines a hyperlink or an anchor element
 twig: ./a.twig
-category: base
+category: atoms
 subcategory: inline
-atomic:
-  patternType: atoms
-  patternSubType: inline
 data:
   a:
     text: Anchor Link
