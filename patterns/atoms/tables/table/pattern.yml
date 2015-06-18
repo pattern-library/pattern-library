@@ -1,11 +1,8 @@
 name: Table
 description: 
 twig: ./table.twig
-category: base
+category: atoms
 subcategory: tables
-atomic:
-  patternType: atoms
-  patternSubType: tables
 data:
   table:
     class: base__table
