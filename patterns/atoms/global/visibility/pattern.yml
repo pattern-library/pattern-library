@@ -1,6 +1,6 @@
 name: Visibility
 description: Examples of `visibility` css trait
-scss: ./_visibility.scss
+sass: ./_visibility.scss
 twig: ./visibility.twig
 category: atoms
 subcategory: global

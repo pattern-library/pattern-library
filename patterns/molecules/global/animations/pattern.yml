@@ -1,6 +1,6 @@
 name: Animations
 description: CSS animations example
-scss: ./_animation.scss
+sass: ./_animation.scss
 twig: ./animations.twig
 category: molecules
 subcategory: global
