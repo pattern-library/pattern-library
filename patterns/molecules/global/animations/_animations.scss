@@ -14,16 +14,19 @@
 .demo__animate__move {
   position: relative;
 }
-.demo__animate__move .demo-shape {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 20px;
-  background: gray;
-  @include transition(all, 0.8s, ease-in-out);
-}
-.demo__animate__move:hover > .demo-shape {
-  left: 100%;
-  margin-left: -20px;
+.demo__animate__move {
+  position: relative;
+  .demo-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    background: gray;
+    @include transition(all, 0.8s, ease-in-out);
+  }
+  &:hover > .demo-shape {
+    left: 100%;
+    margin-left: -20px;
+  }  
 }
