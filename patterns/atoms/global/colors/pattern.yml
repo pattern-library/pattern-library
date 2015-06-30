@@ -1,5 +1,35 @@
 name: Colors
 description: Basic color examples
+sass: ./_colors.scss
 twig: ./colors.twig
 category: atoms
 subcategory: global
+data:
+  colors:
+    color1: 
+      class: colors__color1
+      text: red
+    color2: 
+      class: colors__color2
+      text: green
+    color3: 
+      class: colors__color3
+      text: blue
+    color4: 
+      class: colors__color4
+      text: yellow
+    color5: 
+      class: colors__color5
+      text: aqua
+    color6: 
+      class: colors__color6
+      text: purple
+    color7: 
+      class: colors__color7
+      text: white
+    color8: 
+      class: colors__color8
+      text: gray
+    color9: 
+      class: colors__color9
+      text: black
