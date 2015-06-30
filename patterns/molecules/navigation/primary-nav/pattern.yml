@@ -1,0 +1,32 @@
+name: Primary Nav
+description: nav element with an unordered list
+twig: ./primary-nav.twig
+category: molecules
+subcategory: navigation
+data:
+  nav:
+    class: nav__primary
+    id: nav
+    list:
+      class: nav__primary__main
+      listItems:
+        -
+          title: Shows
+          shortTitle: Shows
+          url: /shows
+          class: nav__main__item
+        -
+          title: Feature-Length Movies
+          shortTitle: Movies
+          url: /movies
+          class: nav__main__item
+        -
+          title: Full Episodes
+          shortTitle: Episodes
+          url: /episodes
+          class: nav__main__item
+        -
+          title: Season Schedule
+          shortTitle: Schedule
+          url: /schedule
+          class: nav__main__item
