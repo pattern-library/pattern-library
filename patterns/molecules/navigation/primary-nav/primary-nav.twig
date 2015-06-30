@@ -1,0 +1,7 @@
+<nav id="{{nav.id}}" class="{{nav.class}}">
+  <ul class="{{nav.list.class}}">
+    {% for item in nav.list.listItems %}
+      <li class="{{ item.class }}"><a href="{{ item.url }}" title="{{ item.title }}">{{ item.shortTitle }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
