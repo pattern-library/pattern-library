@@ -20,11 +20,11 @@ Main navigation element
 
 ```html
 <nav id="nav" class="nav__primary">
-  <ul>
-    <li class="nav__top"><a href="/shows" title="Shows">Shows</a></li>
-    <li class="nav__top"><a href="/movies" title="Feature-Length Movies">Movies</a></li>
-    <li class="nav__top"><a href="/episodes" title="Full Episodes">Episodes</a></li>
-    <li class="nav__top"><a href="/schedule" title="Season Schedule">Schedule</a></li>
+  <ul class="nav__primary__main">
+    <li class="nav__main__item"><a href="/shows" title="Shows">Shows</a></li>
+    <li class="nav__main__item"><a href="/movies" title="Feature-Length Movies">Movies</a></li>
+    <li class="nav__main__item"><a href="/episodes" title="Full Episodes">Episodes</a></li>
+    <li class="nav__main__item"><a href="/schedule" title="Season Schedule">Schedule</a></li>
   </ul>
 </nav>
 ```
