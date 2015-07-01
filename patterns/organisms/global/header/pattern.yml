@@ -1,0 +1,44 @@
+name: Header
+description: A site header with a logo and navigation.
+twig: ./header.twig
+category: organisms
+subcategory: global
+data:
+  header:
+    class: header
+    logo:
+      class: header__logo
+      img:
+        src: http://placehold.it/350x150&text=header__logo__img
+        alt: FancyBrand logo
+        class: logo__img header__logo__img
+      a:
+        title: Visit the FancyBrand HomePage
+        class: logo__a header__logo__a
+        href: http://example.com
+    nav:
+      class: nav__primary header__nav__primary
+      id: header__nav
+      list:
+        class: nav__primary__main header__nav__primary__main
+        listItems:
+          -
+            title: Shows
+            shortTitle: Shows
+            url: /shows
+            class: nav__main__item header__nav__main__item
+          -
+            title: Feature-Length Movies
+            shortTitle: Movies
+            url: /movies
+            class: nav__main__item header__nav__main__item
+          -
+            title: Full Episodes
+            shortTitle: Episodes
+            url: /episodes
+            class: nav__main__item header__nav__main__item
+          -
+            title: Season Schedule
+            shortTitle: Schedule
+            url: /schedule
+            class: nav__main__item header__nav__main__item

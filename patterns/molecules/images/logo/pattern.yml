@@ -1,0 +1,16 @@
+name: Logo
+description: A simple logo html pattern with a link
+twig: ./logo.twig
+category: molecules
+subcategory: images
+data:
+  logo:
+    class: logo
+    img:
+      src: http://placehold.it/350x150&text=logo__img
+      alt: FancyBrand logo
+      class: logo__img
+    a:
+      title: Visit the FancyBrand HomePage
+      class: logo__a
+      href: http://example.com
