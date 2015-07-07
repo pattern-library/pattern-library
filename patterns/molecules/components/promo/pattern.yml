@@ -1,0 +1,23 @@
+name: Promo
+description: A small promotional article with an image.
+twig: ./promo.twig
+category: molecules
+subcategory: components
+data:
+  promo:
+    class: promo
+    image:
+      class: promo__image
+      img:
+        alt: Thing 123 Promo Image
+        class: promo__image__img
+        src: http://placehold.it/350x150&text=promo__image
+    text:
+      class: promo__text
+      header:
+        element: h2
+        class: promo__text__header
+        text: Thing 123 Premieres
+      body:
+        class: promo__body
+        text: All about what happens on episode one of Thing 123
