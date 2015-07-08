@@ -1,0 +1,34 @@
+name: Footer
+description: A site footer with a copyright and navigation.
+twig: ./footer.twig
+category: organisms
+subcategory: global
+data:
+  footer:
+    class: footer
+    copyright:
+      class: copyright footer__copyright
+      text: "&copy;2015 NBCUniversal, Inc. All Rights Reserved. A Division of NBC Universal"
+    nav:
+      class: footer__nav
+      listItems:
+        -
+          title: Shows
+          shortTitle: Shows
+          url: /shows
+          class: footer__nav__item
+        -
+          title: Feature-Length Movies
+          shortTitle: Movies
+          url: /movies
+          class: footer__nav__item
+        -
+          title: Full Episodes
+          shortTitle: Episodes
+          url: /episodes
+          class: footer__nav__item
+        -
+          title: Season Schedule
+          shortTitle: Schedule
+          url: /schedule
+          class: footer__nav__item
