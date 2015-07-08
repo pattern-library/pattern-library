@@ -1,0 +1,16 @@
+<div class="{{slider.class}}">
+
+  <div class="{{slider.buttons.next.class}}">{{slider.buttons.next.text}}</div>
+  
+  <div class="{{slider.container.class}}">
+  
+    {% for slide in slider.slides %}
+      {% set promo = slide %}
+      {% include 'molecules/components/promo/promo.twig' %}
+    {% endfor %}
+    
+  </div
+
+  <div class="{{slider.buttons.previous.class}}">{{slider.buttons.previous.text}}</div>
+  
+</div>

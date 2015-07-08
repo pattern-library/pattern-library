@@ -1,0 +1,69 @@
+name: Slider
+description: A content slider
+twig: ./slider.twig
+category: organisms
+subcategory: components
+data:
+  slider:
+    class: slider
+    buttons:
+      next:
+        class: button__next
+        text: next
+      previous:
+        class: button__previous
+        text: previous
+    container:
+      class: slides
+    slides:
+      -
+        class: slide__1
+        image:
+          class: slide__1__image
+          img:
+            alt: Slide #1 Image
+            class: slide__1__image__img
+            src: http://placehold.it/800x600&text=slider__image
+        text:
+          class: slide__1__text
+          header:
+            element: h2
+            class: slide__1__text__header
+            text: Slide #1 Title
+          body:
+            class: slide__1__body
+            text: All about what happens on slide ONE is all that happens during reading this slide.
+      -
+        class: slide__2
+        image:
+          class: slide__2__image
+          img:
+            alt: Slide #2 Image
+            class: slide__2__image__img
+            src: http://placehold.it/800x600&text=slider__image
+        text:
+          class: slide__2__text
+          header:
+            element: h2
+            class: slide__2__text__header
+            text: Slide #2 Title
+          body:
+            class: slide__2__body
+            text: All about what happens on slide TWO is all that happens during reading this slide.
+      -
+        class: slide__3
+        image:
+          class: slide__3__image
+          img:
+            alt: Slide #3 Image
+            class: slide__3__image__img
+            src: http://placehold.it/800x600&text=slider__image
+        text:
+          class: slide__3__text
+          header:
+            element: h2
+            class: slide__3__text__header
+            text: Slide #3 Title
+          body:
+            class: slide__3__body
+            text: All about what happens on slide THREE is all that happens during reading this slide.
