@@ -2,9 +2,9 @@
   
   <div class="{{hero.container.class}}">
   
-    {% for promo in hero.heros %}
+    {% for hero in hero.heros %}
 
-      {% include 'molecules/components/promo/promo.twig' %}
+      {% include 'molecules/components/promo/promo.twig' with {'promo': hero} %}
 
     {% endfor %}
     

@@ -5,8 +5,9 @@
   <div class="{{slider.container.class}}">
   
     {% for slide in slider.slides %}
-      {% set promo = slide %}
-      {% include 'molecules/components/promo/promo.twig' %}
+
+      {% include 'molecules/components/promo/promo.twig' with {'promo': slide} %}
+      
     {% endfor %}
     
   </div
