@@ -1,9 +1,7 @@
 <header class="{{header.class}}">
 
-{% set logo = header.logo %}
-{% include 'molecules/images/logo/logo.twig' %}
+  {% include 'molecules/images/logo/logo.twig' with {'logo': header.logo} %}
 
-{% set nav = header.nav %}
-{% include 'molecules/navigation/primary-nav/primary-nav.twig' %}
+  {% include 'molecules/navigation/primary-nav/primary-nav.twig' with {'nav': header.nav} %}
   
 </header>
