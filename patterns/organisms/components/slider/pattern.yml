@@ -17,7 +17,7 @@ data:
       class: slides
     slides:
       -
-        class: slide__1
+        class: slide slide__1
         image:
           class: slide__1__image
           img:
@@ -34,7 +34,7 @@ data:
             class: slide__1__body
             text: All about what happens on slide ONE is all that happens during reading this slide.
       -
-        class: slide__2
+        class: slide slide__2
         image:
           class: slide__2__image
           img:
@@ -51,7 +51,7 @@ data:
             class: slide__2__body
             text: All about what happens on slide TWO is all that happens during reading this slide.
       -
-        class: slide__3
+        class: slide slide__3
         image:
           class: slide__3__image
           img:
