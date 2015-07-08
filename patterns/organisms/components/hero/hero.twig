@@ -1,0 +1,13 @@
+<div class="{{hero.class}}">
+  
+  <div class="{{hero.container.class}}">
+  
+    {% for hero in hero.heros %}
+
+      {% include 'molecules/components/promo/promo.twig' with {'promo': hero} %}
+
+    {% endfor %}
+    
+  </div>
+  
+</div>

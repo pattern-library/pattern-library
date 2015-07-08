@@ -1,0 +1,62 @@
+name: Teaser List
+description: A list of promotional teasers
+twig: ./teaser.twig
+category: organisms
+subcategory: components
+data:
+  teaser:
+    class: teaser
+    container:
+      class: teasers__container
+    teasers:
+      -
+        class: teaser teaser__1
+        image:
+          class: teaser__1__image
+          img:
+            alt: teaser #1 Image
+            class: teaser__1__image__img
+            src: http://placehold.it/800x600&text=teaser__image
+        text:
+          class: teaser__1__text
+          header:
+            element: h2
+            class: teaser__1__text__header
+            text: teaser #1 Title
+          body:
+            class: teaser__1__body
+            text: All about what happens on teaser ONE is all that happens during reading this teaser.
+      -
+        class: teaser teaser__2
+        image:
+          class: teaser__2__image
+          img:
+            alt: teaser #2 Image
+            class: teaser__2__image__img
+            src: http://placehold.it/400x300&text=teaser__image
+        text:
+          class: teaser__2__text
+          header:
+            element: h2
+            class: teaser__2__text__header
+            text: teaser #2 Title
+          body:
+            class: teaser__2__body
+            text: All about what happens on teaser TWO is all that happens during reading this teaser.
+      -
+        class: teaser teaser__3
+        image:
+          class: teaser__3__image
+          img:
+            alt: teaser #3 Image
+            class: teaser__3__image__img
+            src: http://placehold.it/400x300&text=teaser__image
+        text:
+          class: teaser__3__text
+          header:
+            element: h2
+            class: teaser__3__text__header
+            text: teaser #3 Title
+          body:
+            class: teaser__3__body
+            text: All about what happens on teaser THREE is all that happens during reading this teaser.
