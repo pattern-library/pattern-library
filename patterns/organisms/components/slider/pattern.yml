@@ -19,16 +19,16 @@ data:
       -
         class: slide slide__1
         image:
-          class: slide__1__image
+          class: slide__image slide__1__image
           img:
             alt: Slide #1 Image
             class: slide__1__image__img
             src: http://placehold.it/800x600&text=slider__image
         text:
-          class: slide__1__text
+          class: slide__text slide__1__text
           header:
             element: h2
-            class: slide__1__text__header
+            class: slide__text__header slide__1__text__header
             text: Slide #1 Title
           body:
             class: slide__1__body
@@ -36,16 +36,16 @@ data:
       -
         class: slide slide__2
         image:
-          class: slide__2__image
+          class: slide__image slide__2__image
           img:
             alt: Slide #2 Image
             class: slide__2__image__img
             src: http://placehold.it/800x600&text=slider__image
         text:
-          class: slide__2__text
+          class: slide__text slide__2__text
           header:
             element: h2
-            class: slide__2__text__header
+            class: slide__text__header slide__2__text__header
             text: Slide #2 Title
           body:
             class: slide__2__body
@@ -53,16 +53,16 @@ data:
       -
         class: slide slide__3
         image:
-          class: slide__3__image
+          class: slide__image slide__3__image
           img:
             alt: Slide #3 Image
             class: slide__3__image__img
             src: http://placehold.it/800x600&text=slider__image
         text:
-          class: slide__3__text
+          class: slide__text slide__3__text
           header:
             element: h2
-            class: slide__3__text__header
+            class: slide__text__header slide__3__text__header
             text: Slide #3 Title
           body:
             class: slide__3__body
