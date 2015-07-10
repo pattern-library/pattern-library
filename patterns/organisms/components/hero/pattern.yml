@@ -12,16 +12,16 @@ data:
       -
         class: hero hero__1
         image:
-          class: hero__1__image
+          class: hero__image hero__1__image
           img:
             alt: hero #1 Image
             class: hero__1__image__img
             src: http://placehold.it/800x600&text=hero__image
         text:
-          class: hero__1__text
+          class: hero__text hero__1__text
           header:
             element: h2
-            class: hero__1__text__header
+            class: hero__text__header hero__1__text__header
             text: hero #1 Title
           body:
             class: hero__1__body
@@ -29,16 +29,16 @@ data:
       -
         class: hero hero__2
         image:
-          class: hero__2__image
+          class: hero__image hero__2__image
           img:
             alt: hero #2 Image
             class: hero__2__image__img
             src: http://placehold.it/400x300&text=hero__image
         text:
-          class: hero__2__text
+          class: hero__text hero__2__text
           header:
             element: h2
-            class: hero__2__text__header
+            class: hero__text__header hero__2__text__header
             text: hero #2 Title
           body:
             class: hero__2__body
@@ -46,16 +46,16 @@ data:
       -
         class: hero hero__3
         image:
-          class: hero__3__image
+          class: hero__image hero__3__image
           img:
             alt: hero #3 Image
             class: hero__3__image__img
             src: http://placehold.it/400x300&text=hero__image
         text:
-          class: hero__3__text
+          class: hero__text hero__3__text
           header:
             element: h2
-            class: hero__3__text__header
+            class: hero__text__header hero__3__text__header
             text: hero #3 Title
           body:
             class: hero__3__body
