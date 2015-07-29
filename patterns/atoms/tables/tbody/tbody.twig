@@ -5,7 +5,6 @@
 
 <tbody class="{{body.class}}">
   {% for item in body.td %}
-    {% set i = loop.index0 %}
     {% include 'atoms/tables/tr/tr.twig' %}
   {% endfor %}
 </tbody>

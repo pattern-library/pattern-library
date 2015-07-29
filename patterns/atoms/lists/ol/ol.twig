@@ -1,7 +1,6 @@
 {% set li = ol.li %}
 <ol class="{{ol.class}}"> 
   {% for item in li %}
-    {% set i = loop.index0 %}
-    {% include 'atoms/lists/li/li.twig' with {li, i} %}
+    {% include 'atoms/lists/li/li.twig' %}
   {% endfor %}
 </ol>
