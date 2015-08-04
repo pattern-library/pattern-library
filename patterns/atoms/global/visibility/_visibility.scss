@@ -1,4 +1,7 @@
 /* Visibility Classes */
+$bp-med: 30em;
+$bp-large: 50em;
+$bp-large-2: 75em;
 .hide__small {
   @media all and (max-width: $bp-med) {
     display: none;
