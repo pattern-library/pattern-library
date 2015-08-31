@@ -1,0 +1,14 @@
+<div class="{{articleBody.class}}">
+  {% for paragraph in articleBody.paragraphs %}
+    <p class="{{paragraph.class}}">{{ paragraph.text | raw }}</p>
+  {% endfor %}
+
+  {% include 'atoms/images/img/img.twig' with {img: articleBody.image} %}
+
+  {% include 'atoms/lists/ul/ul.twig' with {ul: articleBody.ul} %}
+  {% include 'atoms/lists/ol/ol.twig' with {ol: articleBody.ol} %}
+
+  {% include 'atoms/text/blockquote/blockquote.twig' with {blockquote: articleBody.blockquote} %}
+
+
+</div>
