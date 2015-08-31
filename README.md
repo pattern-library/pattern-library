@@ -1,90 +1,31 @@
 # Pattern Library
-A repository of HTML Patterns and their supporting files.
+
+This repository is a set of html patterns following the [pattern-library](http://pattern-library.github.io) organizational model.
+
+## Requirements
+
+* [Composer](https://getcomposer.org)
+* [NodeJS](https://nodejs.org)
+* [Yeoman](http://yeoman.io)
 
 ## Installation
 
-### NPM
+### To install as a stand-alone library:
 
-```npm install pattern-library```
+* Clone this repo
+* Install NPM dependencies
+  `npm install`
+* Install Pattern Lab, then import ALL Pattern Libraries and local site files into Pattern Lab
+  `gulp build`
+* Run server, watch files
+  `gulp serve`
 
-### Bower
+### To install as a dependency of an existing library or project
 
-```bower install pattern-library```
-
-
-## Single-Pattern Folder Contents
-
-These are the files which *may* be in a single HTML pattern's directory. This imaginary pattern is called `example-pattern`. 
-
-The *only* required files are `pattern.yml` and a pattern file (in any templating language or plain html.)
-
-* ![folder](http://scottnath.github.io/atlas/images/doctree-icons/folder-open.gif) example-pattern/
-
-	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) pattern.yml
-	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.twig
-	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.js
-	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) README.md
-	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.scss
-	* ![folder](http://scottnath.github.io/atlas/images/doctree-icons/folder-open.gif) test/
-		* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) main.js
+* Import to your library via NPM
+  `npm install pattern-library --save`
 
 
-## Single-Pattern YAML File (required)
+## What is this pattern library?
 
-Each single pattern folder *must* contain a `pattern.yml` file. 
-
-This file contains paths to find supporting files, meta data, and dummy data to populate the pattern for testing purposes.
-
-```
-name: Figure Image
-description: A `figure` element with `figcaption` and an included `img` element from /base/img/img.html.
-twig: ./figure-image.twig
-sass: ./_figure-image.scss
-script: ./figure-image.js
-category: components
-subcategory: media
-atomic:
-  patternType: molecules
-  patternSubType: media
-options:
-	foo: bar
-data:
-  figure:
-    img:
-      src: http://placehold.it/350x150&text=figure--image
-      alt: Aenean commodo ligula eget dolor. Aenean massa.
-      class: figure--image
-    caption:
-      text: Aenean commodo ligula eget dolor. Aenean massa. Cumo sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    class: base--figure-image
-```
-
-## Single-Pattern Template File
-
-Each single pattern folder *must* contain a `[pattern-name].[template]` (example-pattern.twig) file. These files should *not* contain actual text, data, images, etc. Instead, patterns use curly-braces as data placeholders. Even if they are .html files.
-
-## Other Possible Single-Pattern Files
-
-### README.md
-
-Should include usage examples
-
-### PATTERN.twig/swig/mustache/html
-
-A reusable template containing html, data-placeholders with curly braces, import-code for other patterns
-
-### PATTERN.js
-
-A pattern's js file. 
-
-### ./PATTERN.scss
-
-A SASS file. **NOTE:** do not prefix this file with an underscore or it will be ignored when import-conversion happens.
-
-### ./test/main.js
-
-A unit-test file for the pattern.
-
-## Contributing
-
-Submit a pull request to this repo. Do not submit pull requests to the subtree, read-only versions of these patterns.
+The is a collection of base html elements and common html patterns. These can be used to style your project by first stying the base html elements.

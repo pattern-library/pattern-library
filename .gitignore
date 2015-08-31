@@ -1,4 +1,18 @@
+# OS X files
 .DS_Store
+
+# npm
 node_modules
-bower_components
-backlog
+npm-debug.log
+
+# Ignore project files created by phpstorm
+.idea
+
+# Ignore publish directory used by gulp-gh-pages
+.publish
+
+# patternlab
+patternlab
+
+# repository local directory
+local
