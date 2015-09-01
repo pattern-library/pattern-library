@@ -28,4 +28,4 @@ This repository is a set of html patterns following the [pattern-library](http:/
 
 ## What is this pattern library?
 
-The is a collection of base html elements and common html patterns. These can be used to style your project by first stying the base html elements.
+The is a collection of base html elements and common html patterns. These can be used to style your project by first styling the base html elements.
