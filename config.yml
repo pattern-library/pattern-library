@@ -5,10 +5,6 @@ patternlab:
   version: '0.6.6'
 sitefilesDir: './site-files'
 githubrepo: pattern-library
-npmPatternRepos:
-  -
-    name: 'base'
-    repoDir: 'pattern-library'
 templates:
   -
     name: 'site-sass'
@@ -71,6 +67,7 @@ gulpTasks:
         htmlTemplateDest: '{{ fileTypes.patterns.prototyperDestDir }}'
         stylesDest: '{{ fileTypes.sass.prototyperSrcDir }}/local'
         scriptsDest: '{{ fileTypes.js.prototyperSrcDir }}/local'
+        convertCategoryTitlesDataFile: './lib/data/pattern-lab-categories.yml'
       taskName: 'patterns-import-local'
       src:
         - './patterns/**/pattern.yml'

@@ -1,0 +1,24 @@
+name: Unordered List
+description: Unordered list of items
+twig: ./unordered.twig
+category: atoms
+subcategory: lists
+data:
+  ul:
+    class: base__ul
+    li:
+      -
+        class: base__li
+        content: Unordered List item 1
+      -
+        class: base__li
+        content: Unordered List item 2
+      -
+        class: base__li
+        content: Unordered List item 3
+      -
+        class: base__li
+        content: Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec sagittis congue consequat. Quisque vel iaculis eros. Quisque varius mi ac erat dapibus id pulvinar mauris lacinia.
+      -
+        class: base__li
+        content: Unordered List item 5

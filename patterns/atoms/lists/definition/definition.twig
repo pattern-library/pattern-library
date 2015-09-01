@@ -1,0 +1,9 @@
+<!-- Pattern: Definition List -->
+<dl class="{{dl.class}}">
+  {% for term in dl.terms %}
+    <dt class="{{term.titleClass}}">{{term.title}}</dt>
+    {% for definition in term.definitions %}
+      <dd class="{{term.definitionClass}}">{{definition}}</dd>
+    {% endfor %}
+  {% endfor %}
+</dl>

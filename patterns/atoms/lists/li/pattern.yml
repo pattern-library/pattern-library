@@ -4,6 +4,6 @@ twig: ./li.twig
 category: atoms
 subcategory: lists
 data:
-  i: 0
   li:
-    - {class: base__li, text: List item 1}
+    class: base__li
+    content: List item 1

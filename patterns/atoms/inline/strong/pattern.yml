@@ -2,7 +2,7 @@ name: Strong
 description: Important (strong) text
 twig: ./strong.twig
 category: atoms
-subcategory: text
+subcategory: inline
 data:
   strong:
     text: Important text
