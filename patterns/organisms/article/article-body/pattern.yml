@@ -17,21 +17,41 @@ data:
       alt: Example landscape image
       class: article-body__image__landscape
     blockquote:
-      text: A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.
+      content: A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.
       class: article-body__blockquote
     ul:
       class: article-body__ul
       li:
-        - {class: article-body__li, text: List item 1}
-        - {class: article-body__li, text: List item 2}
-        - {class: article-body__li, text: List item 3}
-        - {class: article-body__li, text: Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec sagittis congue consequat. Quisque vel iaculis eros. Quisque varius mi ac erat dapibus id pulvinar mauris lacinia.}
-        - {class: article-body__li, text: List item 5}
+        -
+          class: article-body__li
+          content: List item 1
+        -
+          class: article-body__li
+          content: List item 2
+        -
+          class: article-body__li
+          content: List item 3
+        -
+          class: article-body__li
+          content: Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec sagittis congue consequat. Quisque vel iaculis eros. Quisque varius mi ac erat dapibus id pulvinar mauris lacinia.
+        -
+          class: article-body__li
+          content: List item 5
     ol:
       class: article-body__ol
       li:
-        - {class: article-body__li, text: List item 1}
-        - {class: article-body__li, text: List item 2}
-        - {class: article-body__li, text: List item 3}
-        - {class: article-body__li, text: Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec sagittis congue consequat. Quisque vel iaculis eros. Quisque varius mi ac erat dapibus id pulvinar mauris lacinia.}
-        - {class: article-body__li, text: List item 5}
+        -
+          class: article-body__li
+          content: List item 1
+        -
+          class: article-body__li
+          content: List item 2
+        -
+          class: article-body__li
+          content: List item 3
+        -
+          class: article-body__li
+          content: Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec sagittis congue consequat. Quisque vel iaculis eros. Quisque varius mi ac erat dapibus id pulvinar mauris lacinia.
+        -
+          class: article-body__li
+          content: List item 5

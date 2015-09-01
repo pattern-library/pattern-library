@@ -5,8 +5,9 @@
 
   {% include 'atoms/images/img/img.twig' with {img: articleBody.image} %}
 
-  {% include 'atoms/lists/ul/ul.twig' with {ul: articleBody.ul} %}
-  {% include 'atoms/lists/ol/ol.twig' with {ol: articleBody.ol} %}
+  {% include 'atoms/lists/unordered/unordered.twig' with {ul: articleBody.ul} %}
+
+  {% include 'atoms/lists/ordered/ordered.twig' with {ol: articleBody.ol} %}
 
   {% include 'atoms/text/blockquote/blockquote.twig' with {blockquote: articleBody.blockquote} %}
 
