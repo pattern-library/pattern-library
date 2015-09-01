@@ -1,3 +1,10 @@
+@mixin transition($property, $duration, $timing) {
+  -webkit-transition: $property $duration $timing;
+  -moz-transition: $property $duration $timing;
+  -o-transition: $property $duration $timing;
+  transition: $property $duration $timing;
+}
+
 .demo__animate {
   background: #ddd;
   padding: 1em;
@@ -5,7 +12,7 @@
   text-align: center;
 }
 .demo__animate__fade {
-  //@include transition(opacity, 0.3s, ease-out);
+  @include transition(opacity, 0.3s, ease-out);
 
   &:hover {
     opacity: 0;
@@ -23,10 +30,10 @@
     bottom: 0;
     width: 20px;
     background: gray;
-    //@include transition(all, 0.8s, ease-in-out);
+    @include transition(all, 0.8s, ease-in-out);
   }
   &:hover > .demo-shape {
     left: 100%;
     margin-left: -20px;
-  }  
+  }
 }
