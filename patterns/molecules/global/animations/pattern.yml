@@ -1,12 +1,11 @@
 name: Animations
 description: CSS animations example
 sass: ./_animations.scss
-script: ./animations.js
 twig: ./animations.twig
 category: molecules
 subcategory: global
 data:
-  animations: 
+  animations:
     class: demo__animate
     versions:
       fade:
