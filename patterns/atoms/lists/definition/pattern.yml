@@ -1,0 +1,22 @@
+name: Definition
+description: PATTERN DESCRIPTION GOES HERE
+twig: definition.twig
+category: atoms
+subcategory: lists
+data:
+  dl:
+    class: definition-list
+    terms:
+      -
+        titleClass: definition-list__term__title
+        title: Firefox
+        definitionClass: definition-list__term__definition
+        definitions:
+          - A free, open source, cross-platform, graphical web browser developed by the Mozilla Corporation and hundreds of volunteers.
+          - The Red Panda also known as the Lesser Panda, Wah, Bear Cat or Firefox, is a mostly herbivorous mammal, slightly larger than a domestic cat (60 cm long).
+      -
+        titleClass: definition-list__term__title
+        title: Chrome
+        definitionClass: definition-list__term__definition
+        definitions:
+          - Google Chrome is a freeware web browser developed by Google. It used the WebKit layout engine until version 27 and, with the exception of its iOS releases, from version 28 and beyond uses the WebKit fork Blink.

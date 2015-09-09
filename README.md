@@ -1,90 +1,99 @@
-# Pattern Library
-A repository of HTML Patterns and their supporting files.
+# Pattern Library: Basic HTML Patterns
+
+This repository is a set of html patterns following the [pattern-library](http://pattern-library.github.io) organizational model.
+
+This pattern library is a collection of base html elements and common html patterns. Using this as a dependency of your project's pattern library will give you all the basic html elements for styling inside of Pattern Lab.
+
+## Requirements
+
+* [Composer](https://getcomposer.org)
+* [NodeJS](https://nodejs.org)
+* [Yeoman](http://yeoman.io)
 
 ## Installation
 
-### NPM
+### To install as a stand-alone library:
 
-```npm install pattern-library```
+* Clone this repo
+* Install NPM dependencies
+  `npm install`
+* Install an instance of Pattern Lab, then import this Pattern Library and local site files into Pattern Lab
+  `gulp build`
+* Run server, watch files
+  `gulp serve`
 
-### Bower
+### To install as a dependency of an existing library or project
 
-```bower install pattern-library```
+* Import to your library via NPM
+  `npm install pattern-library --save`
 
+## Import only specific patterns into Pattern Lab
 
-## Single-Pattern Folder Contents
+Importing files from your pattern library into Pattern Lab is done with the [Pattern Importer](https://github.com/pattern-library/pattern-importer). Specifically, it uses the [gulp task included with the Pattern Importer](https://github.com/pattern-library/pattern-importer/tree/master/gulp). This gulp task uses a configuration to decide *where* to import your patterns, and *which* patterns to import.
 
-These are the files which *may* be in a single HTML pattern's directory. This imaginary pattern is called `example-pattern`. 
-
-The *only* required files are `pattern.yml` and a pattern file (in any templating language or plain html.)
-
-* ![folder](http://scottnath.github.io/atlas/images/doctree-icons/folder-open.gif) example-pattern/
-
-	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) pattern.yml
-	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.twig
-	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.js
-	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) README.md
-	* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) example-pattern.scss
-	* ![folder](http://scottnath.github.io/atlas/images/doctree-icons/folder-open.gif) test/
-		* ![file](http://scottnath.github.io/atlas/images/doctree-icons/document.png) main.js
-
-
-## Single-Pattern YAML File (required)
-
-Each single pattern folder *must* contain a `pattern.yml` file. 
-
-This file contains paths to find supporting files, meta data, and dummy data to populate the pattern for testing purposes.
+To use only *a portion* of this pattern library, you need to change the configuration file `./config.yml`. You will be changing the settings for the `pattern-importer` gulp task. The default for this task inside of `./config.yml` is this:
 
 ```
-name: Figure Image
-description: A `figure` element with `figcaption` and an included `img` element from /base/img/img.html.
-twig: ./figure-image.twig
-sass: ./_figure-image.scss
-script: ./figure-image.js
-category: components
-subcategory: media
-atomic:
-  patternType: molecules
-  patternSubType: media
-options:
-	foo: bar
-data:
-  figure:
-    img:
-      src: http://placehold.it/350x150&text=figure--image
-      alt: Aenean commodo ligula eget dolor. Aenean massa.
-      class: figure--image
-    caption:
-      text: Aenean commodo ligula eget dolor. Aenean massa. Cumo sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    class: base--figure-image
+...
+  patternImporter:
+    localPatterns:
+      config:
+        htmlTemplateDest: '{{ fileTypes.patterns.prototyperDestDir }}'
+        stylesDest: '{{ fileTypes.sass.prototyperSrcDir }}/local'
+        scriptsDest: '{{ fileTypes.js.prototyperSrcDir }}/local'
+        convertCategoryTitlesDataFile: './lib/data/pattern-lab-categories.yml'
+      taskName: 'patterns-import-local'
+      src:
+        - './patterns/**/pattern.yml'
+...
 ```
 
-## Single-Pattern Template File
+You will be changing the `src` config.
 
-Each single pattern folder *must* contain a `[pattern-name].[template]` (example-pattern.twig) file. These files should *not* contain actual text, data, images, etc. Instead, patterns use curly-braces as data placeholders. Even if they are .html files.
+## Import specific patterns: One pattern
 
-## Other Possible Single-Pattern Files
+You want to import only one pattern, *blockquote*:
 
-### README.md
+```
+./patterns/atoms/text/blockquote
+```
 
-Should include usage examples
+Your local patterns source configuration will then be:
 
-### PATTERN.twig/swig/mustache/html
+```
+...
+      src:
+        - './patterns/atoms/text/blockquote/pattern.yml'
+...
+```
 
-A reusable template containing html, data-placeholders with curly braces, import-code for other patterns
+## Import specific patterns: One Subcategory
 
-### PATTERN.js
+So, let's say you wanted to only import html patterns that are in the *lists* subcategory of *atoms*:
 
-A pattern's js file. 
+```
+./patterns/atoms/lists
+```
 
-### ./PATTERN.scss
+Your local patterns source configuration will then be:
 
-A SASS file. **NOTE:** do not prefix this file with an underscore or it will be ignored when import-conversion happens.
+```
+...
+      src:
+        - './patterns/atoms/lists/**/pattern.yml'
+...
+```
 
-### ./test/main.js
+## Import specific patterns: Two Subcategories, ignore one pattern
 
-A unit-test file for the pattern.
+The *src* option is an array and it can also contain the option to ignore files and directories as well. So, let's say you wanted to only import html patterns that are in the *lists* and *text* subcategories of *atoms*, but not include the *blockquote* pattern. Your local patterns source configuration will then be:
 
-## Contributing
+```
+...
+      src:
+        - '!./patterns/atoms/text/blockquote/pattern.yml'
+        - './patterns/atoms/lists/**/pattern.yml'
+        - './patterns/atoms/text/**/pattern.yml'
+...
+```
 
-Submit a pull request to this repo. Do not submit pull requests to the subtree, read-only versions of these patterns.

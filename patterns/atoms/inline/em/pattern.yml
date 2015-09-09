@@ -2,8 +2,8 @@ name: Em
 description: Emphasized text
 twig: ./em.twig
 category: atoms
-subcategory: text
+subcategory: inline
 data:
-  em: 
+  em:
     text: Emphasized text
     class: base__em

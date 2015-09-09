@@ -12,11 +12,27 @@
     "library",
     "components"
   ],
-  "author": "scottnath",
+  "author": "pattern-library",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pattern-library/pattern-library/issues"
   },
   "homepage": "https://github.com/pattern-library/pattern-library",
-  "devDependencies": {}
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-changed": "^1.3.0",
+    "gulp-print": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.0.4",
+    "gulp-task-listing": "^1.0.1",
+    "gulp-watch": "^4.3.5",
+    "pattern-importer": "^0.0.12",
+    "pattern-library-utilities": "^0.0.7",
+    "run-sequence": "^1.1.2"
+  },
+  "dependencies": {
+  }
 }

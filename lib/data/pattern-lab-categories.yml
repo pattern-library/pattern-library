@@ -1,0 +1,36 @@
+categories:
+  base: 00-atoms
+  atoms: 00-atoms
+  molecules: 01-molecules
+  components: 02-organisms
+  organisms: 02-organisms
+  templates: 03-templates
+  pages: 04-pages
+subcategories:
+  00-atoms:
+    global: 00-global
+    text: 01-text
+    lists: 02-lists
+    images: 03-images
+    forms: 04-forms
+    buttons: 05-buttons
+    tables: 06-tables
+    media: 07-media
+    inline: 08-inline
+  01-molecules:
+    text: 00-text
+    layout: 01-layout
+    blocks: 02-blocks
+    media: 03-media
+    forms: 04-forms
+    navigation: 05-navigation
+    components: 06-components
+    messaging: 07-messaging
+    global: 08-global
+    images: 09-images
+  02-organisms:
+    global: 00-global
+    article: 01-article
+    comments: 02-comments
+    components: 03-components
+    sections: 04-sections

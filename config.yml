@@ -1,0 +1,77 @@
+dataFileName: 'pattern.yml'
+prototyperDir: './patternlab'
+patternlab:
+  dest: './patternlab'
+  version: '0.6.6'
+sitefilesDir: './site-files'
+githubrepo: pattern-library
+templates:
+  -
+    name: 'site-sass'
+    src: './lib/templates/style.scss'
+    destDir: './patternlab/source/css/scss'
+    destFile: 'style.scss'
+  -
+    name: 'site-head'
+    src: './lib/templates/head.twig'
+    destDir: './patternlab/source/_meta'
+    destFile: '_00-head.twig'
+  -
+    name: 'site-foot'
+    src: './lib/templates/foot.twig'
+    destDir: './patternlab/source/_meta'
+    destFile: '_01-foot.twig'
+fileTypes:
+  css:
+    sitefilesSrc:
+      - '{{ sitefilesDir }}/css/**/*.css'
+    sitefilesDest: '{{ prototyperDir }}/source/css/site-files'
+  fonts:
+    sitefilesSrc:
+      - '{{ sitefilesDir }}/fonts/*'
+      - '{{ sitefilesDir }}/fonts/**/*'
+    sitefilesDest: '{{ prototyperDir }}/source/fonts'
+  images:
+    sitefilesSrc:
+      - '{{ sitefilesDir }}/images/*'
+      - '{{ sitefilesDir }}/images/**/*'
+    sitefilesDest: '{{ prototyperDir }}/source/images'
+  js:
+    prototyperSrcDir: '{{ prototyperDir }}/source/js'
+    sitefilesSrc:
+      - '{{ sitefilesDir }}/js/**/*.js'
+  patterns:
+    prototyperDestDir: '{{ prototyperDir }}/source/_patterns'
+  sass:
+    prototyperSrcDir: '{{ prototyperDir }}/source/css/scss'
+    prototyperSrc: '{{ prototyperDir }}/source/css/scss/style.scss'
+    prototyperDestDir: '{{ prototyperDir }}/source/css'
+    prototyperDest: '{{ prototyperDir }}/source/css/style.css'
+    sitefilesSrc:
+      - '{{ sitefilesDir }}/css/scss/**/*.scss'
+    sitefilesDest: '{{ prototyperDir }}/source/css/scss/site-files'
+gulpTasks:
+  fileGlobInject:
+    js:
+      srcFile: '{{ prototyperDir }}/source/_meta/_01-foot.twig'
+      destDir: '{{ prototyperDir }}/source/_meta'
+    sass:
+      srcFile: '{{ fileTypes.sass.prototyperSrc }}'
+      destDir: '{{ fileTypes.sass.prototyperSrcDir }}'
+  gulpSass:
+    dependencies:
+      - 'glob-inject-sass-all'
+  patternImporter:
+    localPatterns:
+      config:
+        htmlTemplateDest: '{{ fileTypes.patterns.prototyperDestDir }}'
+        stylesDest: '{{ fileTypes.sass.prototyperSrcDir }}/local'
+        scriptsDest: '{{ fileTypes.js.prototyperSrcDir }}/local'
+        convertCategoryTitlesDataFile: './lib/data/pattern-lab-categories.yml'
+      taskName: 'patterns-import-local'
+      src:
+        - './patterns/**/pattern.yml'
+  replaceUrl:
+    ghPagesPrefix: '/{{ githubrepo }}'
+    src:
+      - '{{ prototyperDir }}/source/**/*.json'

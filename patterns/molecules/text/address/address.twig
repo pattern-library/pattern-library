@@ -1,0 +1,16 @@
+<!-- Pattern: address -->
+<div class="{{address.class}}">
+  <span class="{{address.name.class}}">
+    <span class="given-name">{{address.name.givenName}}</span>
+    <span class="family-name">{{address.name.familyName}}</span>
+  </span>
+  <div class="org">{{address.company.name}}</div>
+  <div class="adr">
+    <div class="street-address">{{address.adr.street}}</div>
+    <span class="locality">{{address.adr.locality}}</span>,
+    <span class="postal-code">{{address.adr.postalCode}}</span>,
+    <abbr class="region" title="{{address.adr.region.title}}">{{address.adr.region.abbr}}</abbr>
+    <div class="country-name" title="{{address.adr.country.title}}">{{address.adr.country.abbr}}</div>
+  </div>
+  <div class="tel">{{address.adr.tel}}</div>
+</div>

@@ -1,0 +1,25 @@
+name: Address
+description: An hcard microformats address html block.
+twig: address.twig
+category: molecules
+subcategory: text
+data:
+  address:
+    class: vcard
+    name:
+      class: fn n
+      givenName: Jane
+      familyName: Doe
+    company:
+      name: Acme, Inc
+    adr:
+      street: 1234 Main St.
+      locality: Anytown
+      postalCode: 11223
+      region:
+        abbr: CA
+        title: California
+      country:
+        abbr: U.S.A.
+        title: United States of America
+      tel: +1.515.244.5611
