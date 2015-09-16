@@ -4,7 +4,7 @@ A `footer` which includes copyright text and footer navigation elements.
 
 ## ClassNames
 
-### footer 
+### footer
 
 * default: `.footer`
 
@@ -21,7 +21,7 @@ A `footer` which includes copyright text and footer navigation elements.
 ```html
 <footer class="footer">
 
-  <div class="copyright footer__copyright">NBCUniversal, Inc. All Rights Reserved. A Division of NBC Universal</div>
+  <div class="copyright footer__copyright">Acme Inc.</div>
 
   <ul class="footer__nav">
     <li class="footer__nav__item"><a href="/shows" title="Shows">Shows</a></li>
@@ -29,6 +29,6 @@ A `footer` which includes copyright text and footer navigation elements.
     <li class="footer__nav__item"><a href="/episodes" title="Full Episodes">Episodes</a></li>
     <li class="footer__nav__item"><a href="/schedule" title="Season Schedule">Schedule</a></li>
   </ul>
-  
+
 </footer>
 ```

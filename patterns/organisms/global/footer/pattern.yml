@@ -8,7 +8,7 @@ data:
     class: footer
     copyright:
       class: copyright footer__copyright
-      text: "&copy;2015 NBCUniversal, Inc. All Rights Reserved. A Division of NBC Universal"
+      text: "&copy;2015 Acme Inc"
     nav:
       class: footer__nav
       listItems:
