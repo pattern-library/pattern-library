@@ -1,16 +1,25 @@
+# name of the data file for individual pattern
 dataFileName: 'pattern.yml'
-prototyperDir: './patternlab'
+# details on our prototyper
 patternlab:
   dest: './patternlab'
   version: '0.6.6'
-sitefilesDir: './site-files'
+  composer: 'php composer.phar'
+# location of a library's global assets
+globalAssets: './global-assets'
+# location of our local patterns
+localPatternsDir: './patterns'
+# the github repository for this pattern library
 githubrepo: pattern-library
+# array of pattern libraries imported via npm
+npmPatternRepos:
+# templates imported into pattern lab after it is installed by composer
 templates:
   -
-    name: 'site-sass'
-    src: './lib/templates/style.scss'
-    destDir: './patternlab/source/css/scss'
-    destFile: 'style.scss'
+    name: 'site-sass' # short name for this file
+    src: './lib/templates/style.scss' # path to original template
+    destDir: './patternlab/source/css/scss' # destination directory for this template
+    destFile: 'style.scss' # final file name for this template
   -
     name: 'site-head'
     src: './lib/templates/head.twig'
@@ -21,57 +30,70 @@ templates:
     src: './lib/templates/foot.twig'
     destDir: './patternlab/source/_meta'
     destFile: '_01-foot.twig'
+# configs required for various file types
 fileTypes:
-  css:
-    sitefilesSrc:
-      - '{{ sitefilesDir }}/css/**/*.css'
-    sitefilesDest: '{{ prototyperDir }}/source/css/site-files'
+  css: # css files
+    globalAssetsSrc: # source(s) for any css files in global assets
+      - '{{ globalAssets }}/styles/css/**/*.css'
+    # destination for css from global assets
+    globalAssetsDest: '{{ patternlab.dest }}/source/css/global-assets'
   fonts:
-    sitefilesSrc:
-      - '{{ sitefilesDir }}/fonts/*'
-      - '{{ sitefilesDir }}/fonts/**/*'
-    sitefilesDest: '{{ prototyperDir }}/source/fonts'
+    globalAssetsSrc:
+      - '{{ globalAssets }}/fonts/*'
+      - '{{ globalAssets }}/fonts/**/*'
+    globalAssetsDest: '{{ patternlab.dest }}/source/fonts'
   images:
-    sitefilesSrc:
-      - '{{ sitefilesDir }}/images/*'
-      - '{{ sitefilesDir }}/images/**/*'
-    sitefilesDest: '{{ prototyperDir }}/source/images'
+    globalAssetsSrc:
+      - '{{ globalAssets }}/images/*'
+      - '{{ globalAssets }}/images/**/*'
+    globalAssetsDest: '{{ patternlab.dest }}/source/images'
   js:
-    prototyperSrcDir: '{{ prototyperDir }}/source/js'
-    sitefilesSrc:
-      - '{{ sitefilesDir }}/js/**/*.js'
+    prototyperSrcDir: '{{ patternlab.dest }}/source/js' # javascript directory inside source directory inside pattern lab
+    globalAssetsSrc:
+      - '{{ globalAssets }}/js/**/*.js'
   patterns:
-    prototyperDestDir: '{{ prototyperDir }}/source/_patterns'
+    prototyperDestDir: '{{ patternlab.dest }}/source/_patterns' # destination for patterns inside pattern lab
   sass:
-    prototyperSrcDir: '{{ prototyperDir }}/source/css/scss'
-    prototyperSrc: '{{ prototyperDir }}/source/css/scss/style.scss'
-    prototyperDestDir: '{{ prototyperDir }}/source/css'
-    prototyperDest: '{{ prototyperDir }}/source/css/style.css'
-    sitefilesSrc:
-      - '{{ sitefilesDir }}/css/scss/**/*.scss'
-    sitefilesDest: '{{ prototyperDir }}/source/css/scss/site-files'
+    prototyperSrcDir: '{{ patternlab.dest }}/source/css/scss' # sass directory inside source directory inside pattern lab
+    prototyperSrc: '{{ patternlab.dest }}/source/css/scss/style.scss' # primary sass file
+    prototyperDestDir: '{{ patternlab.dest }}/source/css' # location for compiled css file
+    prototyperDest: '{{ patternlab.dest }}/source/css/style.css' # final compiled css file
+    globalAssetsSrc:
+      - '{{ globalAssets }}/styles/scss/**/*.scss'
+    globalAssetsDest: '{{ patternlab.dest }}/source/css/scss/global-assets'
+# configuration variables for gulp tasks
 gulpTasks:
+  # cloning a pattern
+  clonePattern:
+    taskName: clone # the task name
+  # glob/inject tasks
   fileGlobInject:
     js:
-      srcFile: '{{ prototyperDir }}/source/_meta/_01-foot.twig'
-      destDir: '{{ prototyperDir }}/source/_meta'
+      srcFile: '{{ patternlab.dest }}/source/_meta/_01-foot.twig'
+      destDir: '{{ patternlab.dest }}/source/_meta'
     sass:
       srcFile: '{{ fileTypes.sass.prototyperSrc }}'
       destDir: '{{ fileTypes.sass.prototyperSrcDir }}'
+  # sass compilation
   gulpSass:
     dependencies:
       - 'glob-inject-sass-all'
+  # pattern importing tasks
   patternImporter:
-    localPatterns:
+    localPatterns: # patterns in THIS pattern library
       config:
-        htmlTemplateDest: '{{ fileTypes.patterns.prototyperDestDir }}'
-        stylesDest: '{{ fileTypes.sass.prototyperSrcDir }}/local'
-        scriptsDest: '{{ fileTypes.js.prototyperSrcDir }}/local'
-        convertCategoryTitlesDataFile: './lib/data/pattern-lab-categories.yml'
-      taskName: 'patterns-import-local'
+        htmlTemplateDest: '{{ fileTypes.patterns.prototyperDestDir }}' # where the html templates will go when imported
+        stylesDest: '{{ fileTypes.sass.prototyperSrcDir }}/local' # where the sass/css will go when imported
+        scriptsDest: '{{ fileTypes.js.prototyperSrcDir }}/local' # where the javascript will go when imported
+        convertCategoryTitles: false # convert category titles - converts 'atoms' to '00-atoms' for pattern lab
+      taskName: 'patterns-import-local' # the task's name
       src:
-        - './patterns/**/pattern.yml'
+        - './patterns/**/pattern.yml' # patterns to be imported by this task
+    npmPatterns: # pattern libraries imported via NPM
+      config:
+        convertCategoryTitles: false
+  # for replacing URLs when exporting library to github pages
   replaceUrl:
     ghPagesPrefix: '/{{ githubrepo }}'
     src:
-      - '{{ prototyperDir }}/source/**/*.json'
+      - '{{ patternlab.dest }}/source/**/*.json'
