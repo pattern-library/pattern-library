@@ -1,0 +1,27 @@
+/* Visibility Classes */
+$small: 30em;
+$medium: 50em;
+$large: 75em;
+.hide__small {
+  @media all and (max-width: $small) {
+    display: none;
+  }
+}
+
+.hide__med {
+  @media all and (min-width: $small) and (max-width: $medium) {
+    display: none;
+  }
+}
+
+.hide__large {
+  @media all and (min-width: $medium) {
+    display: none;
+  }
+}
+
+.hide__large2 {
+  @media all and (min-width:$large) {
+    display: none;
+  }
+}
