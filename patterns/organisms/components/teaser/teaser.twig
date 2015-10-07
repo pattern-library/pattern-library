@@ -1,13 +1,13 @@
 <div class="{{teaser.class}}">
-  
+
   <div class="{{teaser.container.class}}">
-  
+
     {% for teaser in teaser.teasers %}
 
-      {% include 'molecules/components/promo/promo.twig' with {'promo': teaser} %}
+      {% include 'molecules-promo' with {'promo': teaser} %}
 
     {% endfor %}
-    
+
   </div>
-  
+
 </div>

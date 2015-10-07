@@ -10,10 +10,10 @@
   {% for item in content %}
     {% set i = loop.index0 %}
     {% if content[i].class == 'base--th' %}
-      {% include 'atoms/tables/th/th.twig' %}
+      {% include 'atoms-th' %}
     {% else %}
-      {% include 'atoms/tables/td/td.twig' %}
-    {% endif %}  
+      {% include 'atoms-td' %}
+    {% endif %}
 
   {% endfor %}
 </tr>
